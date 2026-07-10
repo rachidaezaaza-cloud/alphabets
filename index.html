@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>منصة التعليم بالذكاء الاصطناعي</title>
-      </head>
-      <body>
-        <h1>مرحباً بك في منصة التعليم بالذكاء الاصطناعي</h1>
-          <p>هذا هو الإصدار الأول من المنصة.</p>
-          </body>
-          </html>
+    <title>درس حرف الميم - المنصة التعليمية</title>
+    <style>
+        :root {
+            --primary: #4CAF50;
+            --secondary: #FF9800;
+            --accent: #E91E63;
+            --bg: #F4F9F4;
+            --text: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .letter-showcase {
+            text-align: center;
+            font-size: 5rem;
+            color: var(--accent);
+            font-weight: bold;
+            margin: 20px 0;
+            background: #FFF0F5;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(233, 30, 99, 0.2);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid #E8F5E9;
+            padding-bottom: 8px;
+            font-size: 1.5rem;
+        }
+        .grid-sounds {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .sound-card {
+            background: #FFF3E0;
+            border: 2px solid var(--secondary);
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px 5px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #E65100;
+        }
+        .sound-card span {
+            display: block;
+            font-size: 1rem;
+            color: #666;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+        .words-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .words-section li {
+            background: #E8F5E9;
+            margin: 10px 0;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-right: 5px solid var(--primary);
+        }
+        .highlight {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        footer {
+            margin-top: auto;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #888;
+            width: 100%;
+            background: #EAEAEA;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مَجْموعَةُ الأَحْرُفِ</h1>
+        <p>مَنَصَّة تَعْلِيمِيَّة مَدْعُومَة بِالذَّكَاءِ الاصْطِنَاعِي</p>
+    </header>
+
+    <div class="container">
+        <div class="letter-showcase">م</div>
+        
+        <h2>1. الحَرَكَاتُ القَصِيرَةُ</h2>
+        <div class="grid-sounds">
+            <div class="sound-card">مَ <span>فَتْحَة</span></div>
+            <div class="sound-card">مُ <span>ضَمَّة</span></div>
+            <div class="sound-card">مِ <span>كَسْرَة</span></div>
+        </div>
+
+        <h2>2. الحَرَكَاتُ الطَّوِيلَةُ (المُدُود)</h2>
+        <div class="grid-sounds" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="sound-card" style="background:#E1F5FE; border-color:#03A9F4; color:#01579B;">مَا <span>مَدّ الأَلِف</span></div>
+            <div class="sound-card" style="background:#E1F5FE; border-color:#03A9F4; color:#01579B;">مُو <span>مَدّ الوَاو</span></div>
+            <div class="sound-card" style="background:#E1F5FE; border-color:#03A9F4; color:#01579B;">مِي <span>مَدّ اليَاء</span></div>
+        </div>
+
+        <div class="words-section">
+            <h2>3. كَلِمَاتٌ لِلْقِرَاءَةِ</h2>
+            <ul>
+                <li><span><span class="highlight">مَ</span>دْرَسَةٌ</span> 🏫</li>
+                <li><span>قَ<span class="highlight">مَ</span>رٌ</span> 🌙</li>
+                <li><span>قَـ<span class="highlight">لَـ</span>مٌ</span> ✏️</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظة © المنصة التعليمية للتعليم الابتدائي المغربي
+    </footer>
+
+</body>
+</html>
