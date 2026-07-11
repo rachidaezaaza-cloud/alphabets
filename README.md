@@ -1,2 +1,1 @@
-# -
-AI-powered educational platform for Moroccan primary education with lessons, exams, worksheets, certificates, videos, and AI agents.
+عالم إسراء عالم المعرفة - منصة تعليمية ذكية للتعليم الابتدائي المغربي، تقدم الدروس، الامتحانات، التمارين، الفيديوهات التعليمية، الشواهد، ومساعدات الذكاء الاصطناعي لدعم التلاميذ والأساتذة.
