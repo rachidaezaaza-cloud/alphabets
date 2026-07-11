@@ -25,6 +25,27 @@ header{
     padding:50px 20px;
 }
 
+nav{
+    background:white;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 2px 8px #ddd;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    display:inline-block;
+    margin:5px 10px;
+    text-decoration:none;
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#084298;
+}
+
 .logo{
     width:130px;
     height:130px;
@@ -87,6 +108,18 @@ footer{
     padding:20px;
     margin-top:40px;
 }
+
+@media(max-width:600px){
+    nav a{
+        display:block;
+        margin:10px;
+    }
+
+    h1{
+        font-size:25px;
+    }
+}
+
 </style>
 
 </head>
@@ -99,6 +132,17 @@ footer{
 </header>
 
 
+<nav>
+<a href="index.html">🏠 الرئيسية</a>
+<a href="lessons.html">📚 الدروس</a>
+<a href="exams.html">📝 الامتحانات</a>
+<a href="worksheets.html">📄 التمارين</a>
+<a href="videos.html">🎥 الفيديوهات</a>
+<a href="certificates.html">🎓 الشواهد</a>
+<a href="ai.html">🤖 المساعد الذكي</a>
+</nav>
+
+
 <div class="container">
 
 <center>
@@ -108,44 +152,57 @@ footer{
 
 <div class="intro">
 <h2>مرحباً بكم 👋</h2>
+
 <p>
 في موقع عالم إسراء عالم المعرفة ستجدون دروساً وتمارين وامتحانات
 وفيديوهات تعليمية تساعد التلاميذ على النجاح والتفوق.
 </p>
+
+<p>
+📚 تعلم - 📝 تدرب - 🎥 شاهد - 🏆 تفوق
+</p>
+
 </div>
 
 
 <div class="cards">
+
 
 <div class="card">
 <h2>📚 الدروس</h2>
 <a href="lessons.html">اكتشف الدروس</a>
 </div>
 
+
 <div class="card">
 <h2>📝 الامتحانات</h2>
 <a href="exams.html">الاختبارات</a>
 </div>
+
 
 <div class="card">
 <h2>📄 التمارين</h2>
 <a href="worksheets.html">تمارين الدعم</a>
 </div>
 
+
 <div class="card">
 <h2>🎥 الفيديوهات</h2>
 <a href="videos.html">شاهد الدروس</a>
 </div>
+
 
 <div class="card">
 <h2>🎓 الشواهد</h2>
 <a href="certificates.html">احصل على شهادة</a>
 </div>
 
+
 <div class="card">
 <h2>🤖 المساعد الذكي</h2>
 <a href="ai.html">اسأل الذكاء الاصطناعي</a>
 </div>
+
 
 </div>
 
@@ -155,6 +212,7 @@ footer{
 <footer>
 © 2026 عالم إسراء عالم المعرفة - جميع الحقوق محفوظة
 </footer>
+
 
 </body>
 </html>
