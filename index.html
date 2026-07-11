@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>درس حرف الميم - المنصة التعليمية</title>
+    <title>منصة الحروف التعليمية للأطفال</title>
     <style>
         :root {
             --primary: #4CAF50;
             --secondary: #FF9800;
-            --accent: #E91E63;
+            --accent: #8E91E6;
             --bg: #F4F9F4;
-            --text: #333;
+            --text: #333333;
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,85 +34,112 @@
             margin: 0;
             font-size: 2.2rem;
         }
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
         .container {
-            max-width: 600px;
             width: 90%;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-        .letter-showcase {
-            text-align: center;
-            font-size: 5rem;
-            color: var(--accent);
-            font-weight: bold;
+            max-width: 600px;
             margin: 20px 0;
-            background: #FFF0F5;
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            line-height: 120px;
-            margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(233, 30, 99, 0.2);
         }
-        h2 {
+        .lesson-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border: 2px solid #E0E0E0;
+        }
+        .lesson-card:hover {
+            border-color: var(--primary);
+        }
+        .lesson-title {
             color: var(--primary);
-            border-bottom: 2px solid #E8F5E9;
-            padding-bottom: 8px;
-            font-size: 1.5rem;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-top: 0;
+            border-bottom: 3px dashed #E0E0E0;
+            padding-bottom: 10px;
         }
-        .grid-sounds {
+        .letter-circle {
+            width: 100px;
+            height: 100px;
+            background-color: #FFF0F5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            color: #E91E63;
+            font-weight: bold;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(233, 30, 99, 0.15);
+        }
+        .section-title {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-top: 25px;
+            border-right: 5px solid var(--secondary);
+            padding-right: 10px;
+        }
+        .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
-            margin: 20px 0;
+            margin-top: 15px;
         }
-        .sound-card {
-            background: #FFF3E0;
+        .card {
+            background-color: #FFF8EM;
             border: 2px solid var(--secondary);
-            border-radius: 10px;
-            text-align: center;
-            padding: 15px 5px;
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #E65100;
-        }
-        .sound-card span {
-            display: block;
-            font-size: 1rem;
-            color: #666;
-            margin-top: 5px;
-            font-weight: normal;
-        }
-        .words-section ul {
-            list-style: none;
-            padding: 0;
-        }
-        .words-section li {
-            background: #E8F5E9;
-            margin: 10px 0;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 1.3rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-right: 5px solid var(--primary);
-        }
-        .highlight {
-            color: var(--accent);
-            font-weight: bold;
-        }
-        footer {
-            margin-top: auto;
-            text-align: center;
+            border-radius: 15px;
             padding: 15px;
-            font-size: 0.9rem;
-            color: #888;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .card.blue {
+            background-color: #EBF5FB;
+            border-color: #3498DB;
+        }
+        .card-letter {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #D35400;
+            margin-bottom: 5px;
+        }
+        .card.blue .card-letter {
+            color: #2980B9;
+        }
+        .card-name {
+            font-size: 1rem;
+            color: #7F8C8D;
+        }
+        .images-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            gap: 15px;
+        }
+        .image-box {
+            text-align: center;
+            background: #F9F9F9;
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid #E0E0E0;
+            flex: 1;
+        }
+        .image-box img {
             width: 100%;
-            background: #EAEAEA;
+            max-width: 120px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .image-caption {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--text);
+            margin-top: 8px;
         }
     </style>
 </head>
@@ -120,39 +147,102 @@
 
     <header>
         <h1>مَجْموعَةُ الأَحْرُفِ</h1>
-        <p>مَنَصَّة تَعْلِيمِيَّة مَدْعُومَة بِالذَّكَاءِ الاصْطِنَاعِي</p>
+        <p>مَنَصَّةٌ تَعْلِيمِيَّةٌ مَدْعُومَةٌ بِالذَّكَاءِ الاصْطِنَاعِيِّ</p>
     </header>
 
     <div class="container">
-        <div class="letter-showcase">م</div>
-        
-        <h2>1. الحَرَكَاتُ القَصِيرَةُ</h2>
-        <div class="grid-sounds">
-            <div class="sound-card">مَ <span>فَتْحَة</span></div>
-            <div class="sound-card">مُ <span>ضَمَّة</span></div>
-            <div class="sound-card">مِ <span>كَسْرَة</span></div>
+
+        <!-- دَرْسُ حَرْفِ المِيمِ -->
+        <div class="lesson-card">
+            <h2 class="lesson-title">دَرْسُ حَرْفِ المِيمِ</h2>
+            <div class="letter-circle">م</div>
+            
+            <div class="section-title">1. الحَرَكَاتُ القَصِيرَةُ</div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-letter">مَ</div>
+                    <div class="card-name">فَتْحَة</div>
+                </div>
+                <div class="card">
+                    <div class="card-letter">مُ</div>
+                    <div class="card-name">ضَمَّة</div>
+                </div>
+                <div class="card">
+                    <div class="card-letter">مِ</div>
+                    <div class="card-name">كَسْرَة</div>
+                </div>
+            </div>
+
+            <div class="section-title">2. الحَرَكَاتُ الطَّوِيلَةُ (المُدُود)</div>
+            <div class="grid">
+                <div class="card blue">
+                    <div class="card-letter">مَا</div>
+                    <div class="card-name">مَدّ الأَلِف</div>
+                </div>
+                <div class="card blue">
+                    <div class="card-letter">مُو</div>
+                    <div class="card-name">مَدّ الوَاو</div>
+                </div>
+                <div class="card blue">
+                    <div class="card-letter">مِي</div>
+                    <div class="card-name">مَدّ اليَاء</div>
+                </div>
+            </div>
         </div>
 
-        <h2>2. الحَرَكَاتُ الطَّوِيلَةُ (المُدُود)</h2>
-        <div class="grid-sounds" style="grid-template-columns: repeat(3, 1fr);">
-            <div class="sound-card" style="background:#E1F5FE; border-color:#03A9F4; color:#01579B;">مَا <span>مَدّ الأَلِف</span></div>
-            <div class="sound-card" style="background:#E1F5FE; border-color:#03A9F4; color:#01579B;">مُو <span>مَدّ الوَاو</span></div>
-            <div class="sound-card" style="background:#E1F5FE; border-color:#03A9F4; color:#01579B;">مِي <span>مَدّ اليَاء</span></div>
+        <!-- دَرْسُ حَرْفِ البَاءِ الجَدِيد -->
+        <div class="lesson-card">
+            <h2 class="lesson-title">دَرْسُ حَرْفِ البَاءِ</h2>
+            <div class="letter-circle" style="background-color: #E8F8F5; color: #16A085;">ب</div>
+            
+            <div class="section-title">1. نَتَعَلَّمُ مَعَ الصُّوَرِ</div>
+            <div class="images-section">
+                <div class="image-box">
+                    <!-- صورة كرتونية لبقرة لطيفة -->
+                    <img src="https://img.icons8.com/flat-luminous/128/cow.png" alt="بقرة">
+                    <div class="image-caption">بَـقَـرَةٌ</div>
+                </div>
+                <div class="image-box">
+                    <!-- صورة كرتونية لبطة لطيفة -->
+                    <img src="https://img.icons8.com/flat-luminous/128/duck.png" alt="بطة">
+                    <div class="image-caption">بَـطَّـةٌ</div>
+                </div>
+            </div>
+
+            <div class="section-title">2. الحَرَكَاتُ القَصِيرَةُ</div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-letter" style="color: #16A085;">بَ</div>
+                    <div class="card-name">فَتْحَة</div>
+                </div>
+                <div class="card">
+                    <div class="card-letter" style="color: #16A085;">بُ</div>
+                    <div class="card-name">ضَمَّة</div>
+                </div>
+                <div class="card">
+                    <div class="card-letter" style="color: #16A085;">بِ</div>
+                    <div class="card-name">كَسْرَة</div>
+                </div>
+            </div>
+
+            <div class="section-title">3. الحَرَكَاتُ الطَّوِيلَةُ (المُدُود)</div>
+            <div class="grid">
+                <div class="card blue">
+                    <div class="card-letter" style="color: #2980B9;">بَا</div>
+                    <div class="card-name">مَدّ الأَلِف</div>
+                </div>
+                <div class="card blue">
+                    <div class="card-letter" style="color: #2980B9;">بُو</div>
+                    <div class="card-name">مَدّ الوَاو</div>
+                </div>
+                <div class="card blue">
+                    <div class="card-letter" style="color: #2980B9;">بِي</div>
+                    <div class="card-name">مَدّ اليَاء</div>
+                </div>
+            </div>
         </div>
 
-        <div class="words-section">
-            <h2>3. كَلِمَاتٌ لِلْقِرَاءَةِ</h2>
-            <ul>
-                <li><span><span class="highlight">مَ</span>دْرَسَةٌ</span> 🏫</li>
-                <li><span>قَ<span class="highlight">مَ</span>رٌ</span> 🌙</li>
-                <li><span>قَـ<span class="highlight">لَـ</span>مٌ</span> ✏️</li>
-            </ul>
-        </div>
     </div>
-
-    <footer>
-        جميع الحقوق محفوظة © المنصة التعليمية للتعليم الابتدائي المغربي
-    </footer>
 
 </body>
 </html>
