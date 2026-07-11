@@ -1,247 +1,136 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة الحروف التعليمية للأطفال</title>
-    <style>
-        :root {
-            --primary: #4CAF50;
-            --secondary: #FF9800;
-            --accent: #8E91E6;
-            --bg: #F4F9F4;
-            --text: #333333;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header {
-            background-color: var(--primary);
-            color: white;
-            width: 100%;
-            text-align: center;
-            padding: 20px 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-        header p {
-            margin: 5px 0 0 0;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        .container {
-            width: 90%;
-            max-width: 600px;
-            margin: 20px 0;
-        }
-        .lesson-card {
-            background: white;
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
-            border: 2px solid #E0E0E0;
-        }
-        .lesson-card:hover {
-            border-color: var(--primary);
-        }
-        .lesson-title {
-            color: var(--primary);
-            text-align: center;
-            font-size: 1.8rem;
-            margin-top: 0;
-            border-bottom: 3px dashed #E0E0E0;
-            padding-bottom: 10px;
-        }
-        .letter-circle {
-            width: 100px;
-            height: 100px;
-            background-color: #FFF0F5;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3.5rem;
-            color: #E91E63;
-            font-weight: bold;
-            margin: 20px auto;
-            box-shadow: 0 4px 8px rgba(233, 30, 99, 0.15);
-        }
-        .section-title {
-            color: var(--primary);
-            font-size: 1.4rem;
-            margin-top: 25px;
-            border-right: 5px solid var(--secondary);
-            padding-right: 10px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin-top: 15px;
-        }
-        .card {
-            background-color: #FFF8E7;
-            border: 2px solid var(--secondary);
-            border-radius: 15px;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-        }
-        .card.blue {
-            background-color: #EBF5FB;
-            border-color: #3498DB;
-        }
-        .card-letter {
-            font-size: 2.2rem;
-            font-weight: bold;
-            color: #D35400;
-            margin-bottom: 5px;
-        }
-        .card.blue .card-letter {
-            color: #2980B9;
-        }
-        .card-name {
-            font-size: 1rem;
-            color: #7F8C8D;
-        }
-        .images-section {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-            gap: 15px;
-        }
-        .image-box {
-            text-align: center;
-            background: #F9F9F9;
-            padding: 15px;
-            border-radius: 15px;
-            border: 1px solid #E0E0E0;
-            flex: 1;
-        }
-        .emoji-icon {
-            font-size: 4.5rem;
-            line-height: 1;
-            margin-bottom: 10px;
-            display: block;
-        }
-        .image-caption {
-            font-size: 1.3rem;
-            font-weight: bold;
-            color: var(--text);
-            margin-top: 8px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منصة التعليم الابتدائي المغربي</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f4f7fb;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+header h1{
+    margin:0;
+    font-size:36px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.search{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.search input{
+    width:90%;
+    max-width:500px;
+    padding:15px;
+    font-size:18px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card a{
+    text-decoration:none;
+    color:#0d6efd;
+    font-size:24px;
+    font-weight:bold;
+}
+
+footer{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
 </head>
 <body>
 
-    <header>
-        <h1>مَجْموعَةُ الأَحْرُفِ</h1>
-        <p>مَنَصَّةٌ تَعْلِيمِيَّةٌ مَدْعُومَةٌ بِالذَّكَاءِ الاصْطِنَاعِيِّ</p>
-    </header>
+<header>
+<h1>📚 منصة التعليم الابتدائي المغربي</h1>
+<p>دروس • تمارين • فروض • امتحانات • فيديوهات • ذكاء اصطناعي</p>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <!-- دَرْسُ حَرْفِ المِيمِ -->
-        <div class="lesson-card">
-            <h2 class="lesson-title">دَرْسُ حَرْفِ المِيمِ</h2>
-            <div class="letter-circle">م</div>
-            
-            <div class="section-title">1. الحَرَكَاتُ القَصِيرَةُ</div>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-letter">مَ</div>
-                    <div class="card-name">فَتْحَة</div>
-                </div>
-                <div class="card">
-                    <div class="card-letter">مُ</div>
-                    <div class="card-name">ضَمَّة</div>
-                </div>
-                <div class="card">
-                    <div class="card-letter">مِ</div>
-                    <div class="card-name">كَسْرَة</div>
-                </div>
-            </div>
+<div class="search">
+<input type="text" placeholder="🔍 ابحث عن درس أو مادة...">
+</div>
 
-            <div class="section-title">2. الحَرَكَاتُ الطَّوِيلَةُ (المُدُود)</div>
-            <div class="grid">
-                <div class="card blue">
-                    <div class="card-letter">مَا</div>
-                    <div class="card-name">مَدّ الأَلِف</div>
-                </div>
-                <div class="card blue">
-                    <div class="card-letter">مُو</div>
-                    <div class="card-name">مَدّ الوَاو</div>
-                </div>
-                <div class="card blue">
-                    <div class="card-letter">مِي</div>
-                    <div class="card-name">مَدّ اليَاء</div>
-                </div>
-            </div>
-        </div>
+<div class="grid">
 
-        <!-- دَرْسُ حَرْفِ البَاءِ الجَدِيد -->
-        <div class="lesson-card">
-            <h2 class="lesson-title">دَرْسُ حَرْفِ البَاءِ</h2>
-            <div class="letter-circle" style="background-color: #E8F8F5; color: #16A085;">ب</div>
-            
-            <div class="section-title">1. نَتَعَلَّمُ مَعَ الصُّوَرِ</div>
-            <div class="images-section">
-                <div class="image-box">
-                    <span class="emoji-icon">🐮</span>
-                    <div class="image-caption">بَـقَـرَةٌ</div>
-                </div>
-                <div class="image-box">
-                    <span class="emoji-icon">🦆</span>
-                    <div class="image-caption">بَـطَّـةٌ</div>
-                </div>
-            </div>
+<div class="card">
+<a href="premiere.html">🟢 الأول ابتدائي</a>
+</div>
 
-            <div class="section-title">2. الحَرَكَاتُ القَصِيرَةُ</div>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-letter" style="color: #16A085;">بَ</div>
-                    <div class="card-name">فَتْحَة</div>
-                </div>
-                <div class="card">
-                    <div class="card-letter" style="color: #16A085;">بُ</div>
-                    <div class="card-name">ضَمَّة</div>
-                </div>
-                <div class="card">
-                    <div class="card-letter" style="color: #16A085;">بِ</div>
-                    <div class="card-name">كَسْرَة</div>
-                </div>
-            </div>
+<div class="card">
+<a href="deuxieme.html">🔵 الثاني ابتدائي</a>
+</div>
 
-            <div class="section-title">3. الحَرَكَاتُ الطَّوِيلَةُ (المُدُود)</div>
-            <div class="grid">
-                <div class="card blue">
-                    <div class="card-letter" style="color: #2980B9;">بَا</div>
-                    <div class="card-name">مَدّ الأَلِف</div>
-                </div>
-                <div class="card blue">
-                    <div class="card-letter" style="color: #2980B9;">بُو</div>
-                    <div class="card-name">مَدّ الوَاو</div>
-                </div>
-                <div class="card blue">
-                    <div class="card-letter" style="color: #2980B9;">بِي</div>
-                    <div class="card-name">مَدّ اليَاء</div>
-                </div>
-            </div>
-        </div>
+<div class="card">
+<a href="troisieme.html">🟡 الثالث ابتدائي</a>
+</div>
 
-    </div>
+<div class="card">
+<a href="quatrieme.html">🟠 الرابع ابتدائي</a>
+</div>
+
+<div class="card">
+<a href="cinquieme.html">🔴 الخامس ابتدائي</a>
+</div>
+
+<div class="card">
+<a href="sixieme.html">🟣 السادس ابتدائي</a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 منصة التعليم الابتدائي المغربي
+</footer>
 
 </body>
-                                                                          </html>
-                        
+</html>
