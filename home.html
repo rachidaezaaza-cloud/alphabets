@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -7,144 +6,113 @@
 <title>منصة التعليم الابتدائي المغربي</title>
 
 <style>
-
 body{
-margin:0;
-font-family:Tahoma,Arial;
-background:#f4f7fb;
+    margin:0;
+    font-family:Tahoma,Arial,sans-serif;
+    background:#f4f7fb;
 }
 
 header{
-background:#0d6efd;
-color:white;
-padding:25px;
-text-align:center;
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
 }
 
 header h1{
-margin:0;
-font-size:34px;
+    margin:0;
+    font-size:36px;
 }
 
 header p{
-font-size:20px;
+    margin-top:10px;
+    font-size:20px;
 }
 
-.search{
-text-align:center;
-margin:25px;
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
 }
 
-.search input{
-width:80%;
-max-width:500px;
-padding:15px;
-border-radius:10px;
-border:none;
-font-size:18px;
-}
-
-.levels{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:20px;
-
-padding:20px;
-
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 .card{
-
-background:white;
-
-border-radius:15px;
-
-padding:25px;
-
-text-align:center;
-
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-
-transition:.3s;
-
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
 }
 
 .card:hover{
-
-transform:scale(1.05);
-
+    transform:translateY(-5px);
 }
 
 .card a{
-
-text-decoration:none;
-
-font-size:22px;
-
-font-weight:bold;
-
-color:#0d6efd;
-
+    text-decoration:none;
+    color:#0d6efd;
+    font-size:24px;
+    font-weight:bold;
 }
 
 footer{
-
-background:#0d6efd;
-
-color:white;
-
-text-align:center;
-
-padding:20px;
-
-margin-top:30px;
-
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
 }
-
 </style>
 
 </head>
-
 <body>
 
 <header>
-
 <h1>📚 منصة التعليم الابتدائي المغربي</h1>
-
-<p>دروس • تمارين • فروض • امتحانات • فيديوهات • ذكاء اصطناعي</p>
-
+<p>دروس - تمارين - فروض - امتحانات - ذكاء اصطناعي</p>
 </header>
 
-<div class="search">
+<div class="container">
 
-<input type="text" placeholder="🔍 ابحث عن درس أو مادة...">
+<div class="grid">
 
+<div class="card">
+<a href="premiere.html">🟢 الأول ابتدائي</a>
 </div>
 
-<div class="levels">
+<div class="card">
+<a href="deuxieme.html">🔵 الثاني ابتدائي</a>
+</div>
 
-<div class="card"><a href="#">🟢 الأول ابتدائي</a></div>
+<div class="card">
+<a href="troisieme.html">🟡 الثالث ابتدائي</a>
+</div>
 
-<div class="card"><a href="#">🔵 الثاني ابتدائي</a></div>
+<div class="card">
+<a href="quatrieme.html">🟠 الرابع ابتدائي</a>
+</div>
 
-<div class="card"><a href="#">🟡 الثالث ابتدائي</a></div>
+<div class="card">
+<a href="cinquieme.html">🔴 الخامس ابتدائي</a>
+</div>
 
-<div class="card"><a href="#">🟠 الرابع ابتدائي</a></div>
+<div class="card">
+<a href="sixieme.html">🟣 السادس ابتدائي</a>
+</div>
 
-<div class="card"><a href="#">🔴 الخامس ابتدائي</a></div>
-
-<div class="card"><a href="#">🟣 السادس ابتدائي</a></div>
+</div>
 
 </div>
 
 <footer>
-
 © 2026 منصة التعليم الابتدائي المغربي
-
 </footer>
 
 </body>
-  </html>
+</html>
