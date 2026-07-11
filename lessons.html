@@ -7,52 +7,113 @@
 <title>الدروس - عالم إسراء عالم المعرفة</title>
 
 <style>
+*{
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Tahoma, Arial;
-    background:#f4f7fb;
-    color:#333;
+margin:0;
+font-family:Tahoma, Arial, sans-serif;
+background:#f4f7fb;
+color:#333;
 }
 
 header{
-    background:linear-gradient(135deg,#0d6efd,#4dabf7);
-    color:white;
-    text-align:center;
-    padding:40px 20px;
+background:linear-gradient(135deg,#0d6efd,#4dabf7);
+color:white;
+text-align:center;
+padding:50px 20px;
+}
+
+nav{
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 8px #ddd;
+position:sticky;
+top:0;
+}
+
+nav a{
+display:inline-block;
+margin:5px 10px;
+text-decoration:none;
+color:#0d6efd;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#084298;
 }
 
 .container{
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.title{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 3px 10px #ddd;
 }
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
 }
 
 .card{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 3px 10px #ddd;
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 3px 10px #ddd;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card a{
-    text-decoration:none;
-    color:#0d6efd;
-    font-weight:bold;
+text-decoration:none;
+color:#0d6efd;
+font-weight:bold;
+font-size:18px;
+}
+
+.back{
+display:block;
+text-align:center;
+margin:25px;
+}
+
+.back a{
+text-decoration:none;
+color:white;
+background:#0d6efd;
+padding:12px 25px;
+border-radius:10px;
 }
 
 footer{
-    margin-top:40px;
-    background:#0d6efd;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:600px){
+nav a{
+display:block;
+margin:10px;
+}
 }
 </style>
 
@@ -66,50 +127,79 @@ footer{
 </header>
 
 
+<nav>
+<a href="index.html">🏠 الرئيسية</a>
+<a href="lessons.html">📚 الدروس</a>
+<a href="exams.html">📝 الامتحانات</a>
+<a href="worksheets.html">📄 التمارين</a>
+<a href="videos.html">🎥 الفيديوهات</a>
+<a href="certificates.html">🎓 الشواهد</a>
+<a href="ai.html">🤖 المساعد الذكي</a>
+</nav>
+
+
 <div class="container">
 
-<h2 style="text-align:center">اختر المستوى الدراسي</h2>
+<div class="title">
+<h2>اختر المستوى الدراسي</h2>
+<p>دروس منظمة لجميع مستويات التعليم الابتدائي المغربي</p>
+</div>
+
 
 <div class="cards">
 
+
 <div class="card">
-<h2>الأول ابتدائي</h2>
+<h2>🥇 الأول ابتدائي</h2>
 <a href="premiere.html">الدخول للدروس</a>
 </div>
 
+
 <div class="card">
-<h2>الثاني ابتدائي</h2>
+<h2>🥈 الثاني ابتدائي</h2>
 <a href="#">قريباً</a>
 </div>
 
+
 <div class="card">
-<h2>الثالث ابتدائي</h2>
+<h2>🥉 الثالث ابتدائي</h2>
 <a href="#">قريباً</a>
 </div>
 
+
 <div class="card">
-<h2>الرابع ابتدائي</h2>
+<h2>📘 الرابع ابتدائي</h2>
 <a href="#">قريباً</a>
 </div>
 
+
 <div class="card">
-<h2>الخامس ابتدائي</h2>
+<h2>📗 الخامس ابتدائي</h2>
 <a href="#">قريباً</a>
 </div>
 
+
 <div class="card">
-<h2>السادس ابتدائي</h2>
+<h2>📙 السادس ابتدائي</h2>
 <a href="#">قريباً</a>
 </div>
 
+
 </div>
+
+
+<div class="back">
+<a href="index.html">⬅ العودة إلى الصفحة الرئيسية</a>
+</div>
+
 
 </div>
 
 
 <footer>
-© 2026 عالم إسراء عالم المعرفة
+© 2026 عالم إسراء عالم المعرفة - جميع الحقوق محفوظة
 </footer>
+
 
 </body>
 </html>
