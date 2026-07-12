@@ -1,55 +1,92 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>التعارف - اللغة العربية</title>
+<title>الدرس الأول - التعارف</title>
 
 <style>
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Tahoma,Arial,sans-serif;
+}
+
+body{
 background:#f4f7fb;
+line-height:1.9;
+color:#333;
 }
 
 header{
-background:#0d6efd;
+background:linear-gradient(135deg,#0d6efd,#4dabf7);
 color:white;
 text-align:center;
-padding:40px;
+padding:50px 20px;
 }
 
 .container{
-max-width:900px;
-margin:auto;
-padding:25px;
+max-width:1100px;
+margin:30px auto;
+padding:20px;
 }
 
-.lesson{
+.section{
 background:white;
-padding:30px;
+padding:25px;
+margin-bottom:25px;
 border-radius:15px;
-box-shadow:0 3px 10px #ddd;
-line-height:2;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-.lesson h2{
+.section h2{
 color:#0d6efd;
+margin-bottom:15px;
 }
 
-.back{
-text-align:center;
-margin-top:30px;
+img{
+width:100%;
+max-width:600px;
+display:block;
+margin:20px auto;
+border-radius:10px;
 }
 
-.back a{
+iframe{
+width:100%;
+height:450px;
+border:none;
+border-radius:10px;
+}
+
+.question{
+background:#eef5ff;
+padding:15px;
+border-radius:10px;
+margin-top:15px;
+}
+
+.answer{
+background:#d4edda;
+padding:15px;
+border-radius:10px;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
 background:#0d6efd;
 color:white;
-padding:12px 25px;
 text-decoration:none;
 border-radius:8px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#084298;
 }
 
 footer{
@@ -75,17 +112,21 @@ margin-top:40px;
 
 <div class="container">
 
-<div class="lesson">
+<div class="section">
 
-<h2>أهداف الدرس</h2>
+<h2>🎯 أهداف الدرس</h2>
 
 <ul>
-<li>أن يتعرف المتعلم على نفسه.</li>
+<li>أن يعرف التلميذ نفسه.</li>
 <li>أن يقدم اسمه لزملائه.</li>
 <li>أن يستعمل عبارات التحية.</li>
 </ul>
 
-<h2>الشرح</h2>
+</div>
+
+<div class="section">
+
+<h2>📚 الشرح</h2>
 
 <p>
 
@@ -97,23 +138,62 @@ margin-top:40px;
 
 أنا تلميذ في السنة الأولى ابتدائي.
 
-مرحباً بكم.
+تشرفت بمعرفتك.
 
-</p>
-
-<h2>تمرين</h2>
-
-<p>
-اكتب اسمك الكامل ثم قل: <b>السلام عليكم، اسمي ....</b>
 </p>
 
 </div>
 
-<div class="back">
+<div class="section">
 
-<a href="doros-arabic1.html">⬅ الرجوع إلى جميع الدروس</a>
+<h2>🖼 صورة الدرس</h2>
+
+<img src="images/logo.png" alt="التعارف">
 
 </div>
+
+<div class="section">
+
+<h2>🎥 فيديو تعليمي</h2>
+
+<iframe src="https://www.youtube.com/embed/mbG1yBwUEks"
+allowfullscreen></iframe>
+
+</div>
+
+<div class="section">
+
+<h2>✍️ تمرين</h2>
+
+<div class="question">
+
+عرف بنفسك باستعمال:
+
+السلام عليكم...
+
+اسمي...
+
+أنا تلميذ...
+
+</div>
+
+<div class="answer">
+
+✅ مثال للإجابة:
+
+السلام عليكم.
+
+اسمي إسراء.
+
+أنا تلميذة في السنة الأولى ابتدائي.
+
+</div>
+
+</div>
+
+<a class="btn" href="doros-arabic1.html">
+⬅ العودة إلى الدروس
+</a>
 
 </div>
 
@@ -124,5 +204,4 @@ margin-top:40px;
 </footer>
 
 </body>
-
 </html>
