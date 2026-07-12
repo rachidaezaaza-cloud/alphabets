@@ -127,8 +127,15 @@ footer{
 <body>
 
 <header>
-<h1>🌍 عالم إسراء عالم المعرفة</h1>
+
+<img src="images/file_00000000725071f4b71b2dee8d3a3f5c.png"
+alt="عالم إسراء"
+width="120"
+style="border-radius:50%;margin-bottom:15px;">
+
+<h1>🌍 عالم إسراء | عالم المعرفة</h1>
 <p>منصة تعليمية ذكية للتعليم الابتدائي المغربي</p>
+
 </header>
 
 
