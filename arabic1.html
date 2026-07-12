@@ -1,47 +1,136 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>اللغة العربية - الأول ابتدائي</title>
 
 <style>
+
+*{
+box-sizing:border-box;
+}
+
 body{
-font-family:Tahoma,Arial,sans-serif;
 margin:0;
+font-family:Tahoma,Arial,sans-serif;
 background:#f4f7fb;
+color:#333;
 }
 
 header{
-background:#0d6efd;
+background:linear-gradient(135deg,#0d6efd,#4dabf7);
 color:white;
-padding:20px;
 text-align:center;
+padding:45px 20px;
+}
+
+nav{
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 8px #ddd;
+position:sticky;
+top:0;
+}
+
+nav a{
+display:inline-block;
+margin:5px 10px;
+text-decoration:none;
+color:#0d6efd;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#084298;
 }
 
 .container{
-max-width:1000px;
-margin:30px auto;
+max-width:1100px;
+margin:auto;
 padding:20px;
 }
 
-.lesson{
+.title{
 background:white;
-padding:20px;
-border-radius:12px;
-margin-bottom:20px;
+padding:25px;
+border-radius:15px;
+text-align:center;
 box-shadow:0 3px 10px #ddd;
 }
 
-a{
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 3px 10px #ddd;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h2{
+color:#0d6efd;
+}
+
+.card a{
 display:inline-block;
 margin-top:15px;
 background:#0d6efd;
 color:white;
-padding:10px 20px;
-text-decoration:none;
+padding:10px 22px;
 border-radius:8px;
+text-decoration:none;
+font-weight:bold;
 }
+
+.card a:hover{
+background:#084298;
+}
+
+.back{
+text-align:center;
+margin:35px;
+}
+
+.back a{
+background:#0d6efd;
+color:white;
+padding:12px 25px;
+border-radius:10px;
+text-decoration:none;
+}
+
+footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:600px){
+
+nav a{
+display:block;
+margin:10px;
+}
+
+}
+
 </style>
 
 </head>
@@ -49,20 +138,131 @@ border-radius:8px;
 <body>
 
 <header>
+
 <h1>📖 اللغة العربية</h1>
-<p>الأول ابتدائي</p>
+
+<p>الأول ابتدائي - عالم إسراء عالم المعرفة</p>
+
 </header>
+
+<nav>
+
+<a href="index.html">🏠 الرئيسية</a>
+
+<a href="premiere.html">📚 الأول ابتدائي</a>
+
+<a href="lessons.html">📖 الدروس</a>
+
+</nav>
 
 <div class="container">
 
-<div class="lesson">
-<h2>📚 الدرس الأول</h2>
-<p>سيتم إضافة الدروس هنا قريباً.</p>
+<div class="title">
+
+<h2>اختر القسم</h2>
+
+<p>ابدأ التعلم واختر ما تريد.</p>
+
 </div>
 
-<a href="premiere.html">⬅ العودة</a>
+<div class="cards">
+
+<div class="card">
+
+<h2>📚 الدروس</h2>
+
+<p>جميع دروس اللغة العربية.</p>
+
+<a href="#">دخول</a>
 
 </div>
+
+<div class="card">
+
+<h2>✍️ القراءة</h2>
+
+<p>تمارين وأنشطة القراءة.</p>
+
+<a href="#">دخول</a>
+
+</div>
+
+<div class="card">
+
+<h2>📝 الكتابة</h2>
+
+<p>تعلم كتابة الحروف والكلمات.</p>
+
+<a href="#">دخول</a>
+
+</div>
+
+<div class="card">
+
+<h2>🔤 التراكيب</h2>
+
+<p>قواعد وتراكيب اللغة العربية.</p>
+
+<a href="#">دخول</a>
+
+</div>
+
+<div class="card">
+
+<h2>🎯 التمارين</h2>
+
+<p>تمارين للدعم والمراجعة.</p>
+
+<a href="#">دخول</a>
+
+</div>
+
+<div class="card">
+
+<h2>📝 الفروض</h2>
+
+<p>نماذج فروض واختبارات.</p>
+
+<a href="#">دخول</a>
+
+</div>
+
+<div class="card">
+
+<h2>🎥 الفيديوهات</h2>
+
+<p>شروحات بالفيديو.</p>
+
+<a href="#">دخول</a>
+
+</div>
+
+<div class="card">
+
+<h2>📄 ملفات PDF</h2>
+
+<p>تحميل الدروس والملخصات.</p>
+
+<a href="#">دخول</a>
+
+</div>
+
+</div>
+
+<div class="back">
+
+<a href="premiere.html">⬅ العودة إلى الأول ابتدائي</a>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 عالم إسراء عالم المعرفة - جميع الحقوق محفوظة
+
+</footer>
 
 </body>
+
 </html>
