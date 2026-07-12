@@ -128,8 +128,7 @@ footer{
 
 <header>
 
-<img src="images/file_00000000725071f4b71b2dee8d3a3f5c.png"
-alt="عالم إسراء"
+<img class="logo" src="images/file_00000000725071f4b71b2dee8d3a3f5c.png" alt="شعار عالم إسراء">
 width="120"
 style="border-radius:50%;margin-bottom:15px;">
 
