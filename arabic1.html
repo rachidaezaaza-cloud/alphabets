@@ -2,131 +2,281 @@
 <html lang="ar" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>اللغة العربية - الأول ابتدائي</title>
+<title>📖 اللغة العربية | الأول ابتدائي | عالم إسراء</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
 *{
+margin:0;
+padding:0;
 box-sizing:border-box;
+font-family:'Cairo',sans-serif;
 }
 
 body{
-margin:0;
-font-family:Tahoma,Arial,sans-serif;
-background:#f4f7fb;
+background:#f5f7fb;
 color:#333;
 }
 
 header{
-background:linear-gradient(135deg,#0d6efd,#4dabf7);
-color:white;
+
+background:linear-gradient(135deg,#4B1E78,#6A1B9A,#8E24AA);
+
+padding:30px 20px;
+
 text-align:center;
-padding:45px 20px;
+
+color:white;
+
+}
+
+.logo{
+
+width:120px;
+
+height:120px;
+
+background:white;
+
+padding:5px;
+
+border-radius:50%;
+
+border:5px solid #FFD54F;
+
+}
+
+header h1{
+
+margin-top:15px;
+
+font-size:40px;
+
+}
+
+header p{
+
+margin-top:10px;
+
+font-size:20px;
+
 }
 
 nav{
-background:white;
+
+background:#4B1E78;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:12px;
+
 padding:15px;
-text-align:center;
-box-shadow:0 2px 8px #ddd;
-position:sticky;
-top:0;
+
 }
 
 nav a{
-display:inline-block;
-margin:5px 10px;
+
+color:white;
+
 text-decoration:none;
-color:#0d6efd;
+
+padding:10px 18px;
+
+border-radius:10px;
+
 font-weight:bold;
+
+transition:.3s;
+
 }
 
 nav a:hover{
-color:#084298;
+
+background:#FFD54F;
+
+color:#4B1E78;
+
 }
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:20px;
-}
+.hero{
 
-.title{
-background:white;
-padding:25px;
-border-radius:15px;
+background:linear-gradient(135deg,#673AB7,#9C27B0);
+
+padding:80px 20px;
+
 text-align:center;
-box-shadow:0 3px 10px #ddd;
+
+color:white;
+
 }
 
-.cards{
+.hero h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+line-height:1.9;
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.lessons{
+
+max-width:1200px;
+
+margin:60px auto;
+
+padding:20px;
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-margin-top:30px;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
 }
 
 .card{
+
 background:white;
-padding:25px;
-border-radius:15px;
+
+border-radius:20px;
+
+padding:30px;
+
 text-align:center;
-box-shadow:0 3px 10px #ddd;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+border-top:8px solid #6A1B9A;
+
 transition:.3s;
+
 }
 
 .card:hover{
-transform:translateY(-6px);
+
+transform:translateY(-10px);
+
 }
 
-.card h2{
-color:#0d6efd;
+.card .icon{
+
+font-size:60px;
+
+margin-bottom:20px;
+
 }
 
-.card a{
+.card h3{
+
+font-size:28px;
+
+color:#4B1E78;
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+font-size:18px;
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+.btn{
+
 display:inline-block;
-margin-top:15px;
-background:#0d6efd;
+
+background:#6A1B9A;
+
 color:white;
-padding:10px 22px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-}
 
-.card a:hover{
-background:#084298;
-}
+padding:12px 30px;
 
-.back{
-text-align:center;
-margin:35px;
-}
-
-.back a{
-background:#0d6efd;
-color:white;
-padding:12px 25px;
 border-radius:10px;
+
+font-weight:bold;
+
 text-decoration:none;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#FFD54F;
+
+color:#4B1E78;
+
 }
 
 footer{
-background:#0d6efd;
+
+margin-top:60px;
+
+background:#4B1E78;
+
 color:white;
+
 text-align:center;
-padding:20px;
-margin-top:40px;
+
+padding:35px;
+
 }
 
-@media(max-width:600px){
+@media(max-width:768px){
 
-nav a{
-display:block;
-margin:10px;
+header h1{
+
+font-size:30px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.logo{
+
+width:90px;
+
+height:90px;
+
 }
 
 }
@@ -139,9 +289,11 @@ margin:10px;
 
 <header>
 
+<img src="images/logo.png" class="logo" alt="شعار عالم إسراء">
+
 <h1>📖 اللغة العربية</h1>
 
-<p>الأول ابتدائي - عالم إسراء عالم المعرفة</p>
+<p>المستوى الأول ابتدائي</p>
 
 </header>
 
@@ -149,87 +301,172 @@ margin:10px;
 
 <a href="index.html">🏠 الرئيسية</a>
 
-<a href="premiere.html">📚 الأول ابتدائي</a>
+<a href="premiere.html">🥇 الأول ابتدائي</a>
 
-<a href="lessons.html">📖 الدروس</a>
+<a href="lessons.html">📚 الدروس</a>
+
+<a href="exams.html">📝 الامتحانات</a>
 
 </nav>
 
-<div class="container">
+<section class="hero">
 
-<div class="title">
+<h2>مرحباً بك في مادة اللغة العربية</h2>
 
-<h2>اختر القسم</h2>
+<p>
 
-<p>ابدأ التعلم واختر ما تريد.</p>
+اختر الدرس الذي تريد تعلمه، ثم أنجز التمارين لاختبار فهمك.
 
-</div>
+</p>
 
-<div class="cards">
+</section>
 
-<div class="card">
-<h2>📚 الدروس</h2>
-<p>جميع دروس اللغة العربية.</p>
-<a href="doros-arabic1.html">دخول</a>
-</div>
-
-<div class="card">
-<h2>✍️ القراءة</h2>
-<p>تمارين وأنشطة القراءة.</p>
-<a href="#">قريباً</a>
+<section class="lessons">
+  <div class="card">
+    <div class="icon">🔤</div>
+    <h3>الحروف الهجائية</h3>
+    <p>تعلم الحروف العربية نطقاً وكتابة.</p>
+    <a href="dars1-arabic1.html" class="btn">ابدأ الدرس</a>
 </div>
 
 <div class="card">
-<h2>📝 الكتابة</h2>
-<p>تعلم كتابة الحروف والكلمات.</p>
-<a href="#">قريباً</a>
+    <div class="icon">📝</div>
+    <h3>الحركات</h3>
+    <p>الفتحة والضمة والكسرة والسكون.</p>
+    <a href="dars2-arabic1.html" class="btn">ابدأ الدرس</a>
 </div>
 
 <div class="card">
-<h2>🔤 التراكيب</h2>
-<p>قواعد وتراكيب اللغة العربية.</p>
-<a href="#">قريباً</a>
+    <div class="icon">📖</div>
+    <h3>المدود</h3>
+    <p>تعلم المد بالألف والواو والياء.</p>
+    <a href="#" class="btn">قريباً</a>
 </div>
 
 <div class="card">
-<h2>🎯 التمارين</h2>
-<p>تمارين للدعم والمراجعة.</p>
-<a href="#">قريباً</a>
+    <div class="icon">🔠</div>
+    <h3>تكوين الكلمات</h3>
+    <p>تركيب الحروف لتكوين كلمات بسيطة.</p>
+    <a href="#" class="btn">قريباً</a>
 </div>
 
 <div class="card">
-<h2>📝 الفروض</h2>
-<p>نماذج فروض واختبارات.</p>
-<a href="#">قريباً</a>
+    <div class="icon">📚</div>
+    <h3>قراءة الجمل</h3>
+    <p>قراءة جمل قصيرة بطريقة صحيحة.</p>
+    <a href="#" class="btn">قريباً</a>
 </div>
 
 <div class="card">
-<h2>🎥 الفيديوهات</h2>
-<p>شروحات بالفيديو.</p>
-<a href="#">قريباً</a>
+    <div class="icon">✍️</div>
+    <h3>الخط والإملاء</h3>
+    <p>تدريبات على تحسين الكتابة والإملاء.</p>
+    <a href="#" class="btn">قريباً</a>
 </div>
 
 <div class="card">
-<h2>📄 ملفات PDF</h2>
-<p>تحميل الدروس والملخصات.</p>
-<a href="#">قريباً</a>
+    <div class="icon">🎮</div>
+    <h3>ألعاب تعليمية</h3>
+    <p>تعلم الحروف والكلمات بطريقة ممتعة.</p>
+    <a href="#" class="btn">قريباً</a>
+</div>
+
+<div class="card">
+    <div class="icon">📝</div>
+    <h3>اختبار اللغة العربية</h3>
+    <p>اختبر معلوماتك بعد إنهاء الدروس.</p>
+    <a href="#" class="btn">ابدأ الاختبار</a>
+</div>
+
+</section>
+  <!-- قسم تقدم التلميذ -->
+
+<section style="padding:70px 20px;background:#f8f5ff;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
+🏆 تقدمك في اللغة العربية
+</h2>
+
+<div style="max-width:900px;margin:auto;">
+
+<p style="font-size:22px;font-weight:bold;margin-bottom:15px;">
+نسبة الإنجاز
+</p>
+
+<div style="background:#ddd;border-radius:50px;overflow:hidden;height:30px;">
+<div style="width:20%;height:30px;background:#6A1B9A;"></div>
+</div>
+
+<p style="margin-top:15px;font-size:20px;color:#555;">
+أكمل الدروس لرفع نسبة التقدم.
+</p>
+
+</div>
+
+</section>
+
+<!-- الإنجازات -->
+
+<section style="padding:70px 20px;background:white;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:50px;">
+⭐ الإنجازات
+</h2>
+
+<div style="max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;">
+
+<div class="card">
+<div class="icon">🥇</div>
+<h3>أول درس</h3>
+<p>أنهِ أول درس لتحصل على هذه الشارة.</p>
+</div>
+
+<div class="card">
+<div class="icon">📚</div>
+<h3>قارئ متميز</h3>
+<p>اقرأ جميع الدروس لتحصل على الوسام.</p>
+</div>
+
+<div class="card">
+<div class="icon">🏅</div>
+<h3>بطل الاختبار</h3>
+<p>احصل على 100٪ في الاختبار النهائي.</p>
 </div>
 
 </div>
 
-<div class="back">
+</section>
 
-<a href="premiere.html">⬅ العودة إلى الأول ابتدائي</a>
+<!-- نصيحة -->
 
-</div>
+<section style="padding:70px 20px;background:#FFF8DC;">
 
-</div>
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;">
+💡 نصيحة اليوم
+</h2>
+
+<p style="max-width:900px;margin:30px auto;font-size:22px;text-align:center;line-height:2;">
+اقرأ بصوت مرتفع لمدة عشر دقائق كل يوم، فهذا يساعد على تحسين القراءة والنطق بسرعة.
+</p>
+
+</section>
 
 <footer>
 
-© 2026 عالم إسراء عالم المعرفة - جميع الحقوق محفوظة
+<h2>🌍 عالم إسراء - عالم المعرفة</h2>
+
+<p>منصة التعليم الابتدائي المغربي</p>
+
+<br>
+
+<p>📖 تعلم اليوم... لتنجح غداً.</p>
+
+<br>
+
+<p>© 2026 جميع الحقوق محفوظة</p>
 
 </footer>
 
 </body>
+
 </html>
