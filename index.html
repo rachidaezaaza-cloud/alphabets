@@ -4,7 +4,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>🌍 عالم إسراء - عالم المعرفة</title>
@@ -22,494 +21,289 @@ scroll-behavior:smooth;
 }
 
 body{
-
 background:#f7f8fc;
-
 color:#333;
-
 overflow-x:hidden;
-
 }
 
 a{
-
 text-decoration:none;
-
 }
 
 header{
-
 background:linear-gradient(135deg,#4B1E78,#6A1B9A,#8E24AA);
-
 color:white;
-
 text-align:center;
-
 padding:35px 20px;
-
 position:relative;
-
 overflow:hidden;
-
 }
 
 header::before{
-
 content:"";
-
 position:absolute;
-
 top:-60px;
-
 left:-60px;
-
 width:220px;
-
 height:220px;
-
 background:rgba(255,255,255,.08);
-
 border-radius:50%;
-
 }
 
 header::after{
-
 content:"";
-
 position:absolute;
-
 bottom:-80px;
-
 right:-80px;
-
 width:260px;
-
 height:260px;
-
 background:rgba(255,255,255,.08);
-
 border-radius:50%;
-
 }
 
 .logo{
-
 width:150px;
-
 height:150px;
-
 border-radius:50%;
-
 background:white;
-
 padding:6px;
-
 border:5px solid #FFD54F;
-
 box-shadow:0 10px 25px rgba(0,0,0,.35);
-
 transition:.4s;
-
 }
 
 .logo:hover{
-
 transform:scale(1.05) rotate(5deg);
-
 }
 
 header h1{
-
 margin-top:20px;
-
 font-size:48px;
-
 font-weight:800;
-
 }
 
 header p{
-
 font-size:22px;
-
 margin-top:12px;
-
 opacity:.95;
-
 }
 
 nav{
-
-nav{
-
 background:#4B1E78;
-
 display:flex;
-
 justify-content:center;
-
 flex-wrap:wrap;
-
 gap:15px;
-
 padding:15px;
-
 position:sticky;
-
 top:0;
-
 z-index:999;
-
 box-shadow:0 5px 15px rgba(0,0,0,.12);
-
 }
 
 nav a{
-
-nav a{
-
 color:white;
-
 font-weight:bold;
-
 padding:12px 22px;
-
 border-radius:12px;
-
 transition:.3s;
-
 }
 
 nav a:hover{
-
 background:#FFD54F;
-
 color:#4B1E78;
-
-border-radius:12px;
-
 }
 
 .hero{
-
 background:linear-gradient(135deg,#4B1E78,#7B1FA2,#9C27B0);
-
 color:white;
-
 padding:140px 20px;
-
-text-align:center;
-
 min-height:500px;
-
 display:flex;
-
 align-items:center;
-
 justify-content:center;
-
 flex-direction:column;
-
-position:relative;
-
-overflow:hidden;
-
+text-align:center;
 }
 
 .hero h2{
-
 font-size:48px;
-
-margin-bottom:25px;
-
+margin-bottom:20px;
 }
 
 .hero p{
-
 font-size:24px;
-
 max-width:900px;
-
-margin:auto;
-
 line-height:1.9;
-
 }
 
 .start{
-
 display:inline-block;
-
 margin-top:40px;
-
 background:#FFD54F;
-
 color:#4B1E78;
-
 padding:18px 45px;
-
-font-size:24px;
-
-font-weight:bold;
-
 border-radius:50px;
-
+font-size:24px;
+font-weight:bold;
 transition:.3s;
-
 }
 
 .start:hover{
-
 background:white;
-
 transform:translateY(-5px);
-
 }
-
-.levels{
-
+  .levels{
 max-width:1300px;
-
 margin:70px auto;
-
 padding:20px;
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
 gap:30px;
-
 }
-  .card{
 
+.card{
 background:white;
-
 border-radius:25px;
-
 padding:30px;
-
 text-align:center;
-
 box-shadow:0 10px 25px rgba(0,0,0,.12);
-
 transition:.4s;
-
 border-top:8px solid #6A1B9A;
-
 }
 
 .card:hover{
-
 transform:translateY(-10px);
-
 box-shadow:0 20px 40px rgba(0,0,0,.18);
-
 }
 
 .card .icon{
-
 font-size:65px;
-
 margin-bottom:20px;
-
 }
 
 .card h3{
-
 font-size:30px;
-
 color:#4B1E78;
-
 margin-bottom:15px;
-
 }
 
 .card p{
-
 font-size:18px;
-
 line-height:1.8;
-
 color:#555;
-
 margin-bottom:25px;
-
 }
 
 .btn{
-
 display:inline-block;
-
 background:#6A1B9A;
-
 color:white;
-
 padding:14px 35px;
-
 border-radius:12px;
-
 font-size:20px;
-
 font-weight:bold;
-
 transition:.3s;
-
 }
 
 .btn:hover{
-
 background:#FFD54F;
-
 color:#4B1E78;
-
 }
 
 .features{
-
 background:white;
-
 padding:80px 20px;
-
 margin-top:40px;
-
 }
 
 .features h2{
-
 text-align:center;
-
 font-size:42px;
-
 color:#4B1E78;
-
 margin-bottom:50px;
-
 }
 
 .feature-grid{
-
 max-width:1200px;
-
 margin:auto;
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
 gap:25px;
-
 }
 
 .feature{
-
 background:#f8f5ff;
-
 padding:30px;
-
 border-radius:20px;
-
 text-align:center;
-
 transition:.3s;
-
 }
 
 .feature:hover{
-
 transform:scale(1.05);
-
 }
 
 .feature span{
-
 font-size:60px;
-
 display:block;
-
 margin-bottom:20px;
-
 }
 
 .feature h3{
-
-color:#4B1E78;
-
-margin-bottom:15px;
-
 font-size:26px;
-
+color:#4B1E78;
+margin-bottom:15px;
 }
 
 .feature p{
-
 font-size:18px;
-
 line-height:1.8;
-
 }
 
 footer{
-
 margin-top:70px;
-
 background:#4B1E78;
-
 color:white;
-
-padding:40px 20px;
-
 text-align:center;
-
+padding:40px 20px;
 }
 
 footer h2{
-
 margin-bottom:15px;
-
 }
 
 @media(max-width:768px){
 
 header h1{
-
 font-size:34px;
+}
 
+.hero{
+padding:80px 20px;
+min-height:400px;
 }
 
 .hero h2{
-
 font-size:34px;
-
 }
 
 .hero p{
-
 font-size:20px;
-
-}
-
-nav{
-
-gap:8px;
-
-}
-
-nav a{
-
-padding:10px;
-
-font-size:15px;
-
 }
 
 .logo{
-
 width:120px;
-
 height:120px;
+}
 
+nav{
+gap:8px;
+}
+
+nav a{
+padding:10px;
+font-size:15px;
 }
 
 }
@@ -533,36 +327,24 @@ height:120px;
 <nav>
 
 <a href="index.html">🏠 الرئيسية</a>
-
 <a href="lessons.html">📚 الدروس</a>
-
 <a href="exams.html">📝 الامتحانات</a>
-
 <a href="worksheets.html">📄 التمارين</a>
-
 <a href="videos.html">🎥 الفيديوهات</a>
-
 <a href="certificates.html">🎓 الشواهد</a>
-
 <a href="ai.html">🤖 المساعد الذكي</a>
 
 </nav>
 
 <section class="hero">
 
-<h2>مرحباً بكم في عالم إسراء</h2>
+<h2>مرحبًا بكم في عالم إسراء</h2>
 
 <p>
-
-تعلم بطريقة ممتعة وحديثة مع الدروس والتمارين والامتحانات والفيديوهات التعليمية.
-
+منصة تعليمية ذكية للتعليم الابتدائي المغربي، تضم الدروس والتمارين والامتحانات والفيديوهات التعليمية لمساعدة التلاميذ على النجاح.
 </p>
 
-<a href="premiere.html" class="start">
-
-🚀 ابدأ التعلم
-
-</a>
+<a href="premiere.html" class="start">🚀 ابدأ التعلم</a>
 
 </section>
 
@@ -570,14 +352,14 @@ height:120px;
   <div class="card">
     <div class="icon">🥇</div>
     <h3>الأول ابتدائي</h3>
-    <p>دروس، تمارين، امتحانات، وأنشطة تفاعلية للمستوى الأول.</p>
+    <p>دروس وتمارين واختبارات وأنشطة تفاعلية للمستوى الأول.</p>
     <a href="premiere.html" class="btn">دخول</a>
 </div>
 
 <div class="card">
     <div class="icon">🥈</div>
     <h3>الثاني ابتدائي</h3>
-    <p>تعلم جميع المواد بطريقة مبسطة وممتعة.</p>
+    <p>تعلم جميع المواد بطريقة ممتعة وسهلة.</p>
     <a href="deuxieme.html" class="btn">دخول</a>
 </div>
 
@@ -591,21 +373,21 @@ height:120px;
 <div class="card">
     <div class="icon">4️⃣</div>
     <h3>الرابع ابتدائي</h3>
-    <p>جميع دروس المستوى الرابع مع تمارين تفاعلية.</p>
+    <p>جميع دروس وتمارين المستوى الرابع الابتدائي.</p>
     <a href="quatrieme.html" class="btn">دخول</a>
 </div>
 
 <div class="card">
     <div class="icon">5️⃣</div>
     <h3>الخامس ابتدائي</h3>
-    <p>استعد للامتحانات من خلال الدروس والفروض.</p>
+    <p>استعد للامتحانات مع أفضل الدروس والفروض.</p>
     <a href="cinquieme.html" class="btn">دخول</a>
 </div>
 
 <div class="card">
     <div class="icon">6️⃣</div>
     <h3>السادس ابتدائي</h3>
-    <p>دروس شاملة للتحضير للامتحان الإقليمي.</p>
+    <p>تحضير شامل للامتحان الإقليمي مع تمارين نموذجية.</p>
     <a href="sixieme.html" class="btn">دخول</a>
 </div>
 
@@ -620,25 +402,37 @@ height:120px;
 <div class="feature">
 <span>📚</span>
 <h3>دروس مبسطة</h3>
-<p>شرح سهل وواضح يناسب جميع تلاميذ التعليم الابتدائي.</p>
+<p>شرح واضح ومبسط لجميع مواد التعليم الابتدائي.</p>
 </div>
 
 <div class="feature">
 <span>📝</span>
-<h3>تمارين وامتحانات</h3>
-<p>فروض واختبارات مع نماذج للمراجعة والاستعداد.</p>
+<h3>تمارين وفروض</h3>
+<p>تمارين تفاعلية وفروض مع التصحيح لمساعدة التلميذ.</p>
 </div>
 
 <div class="feature">
 <span>🎥</span>
 <h3>فيديوهات تعليمية</h3>
-<p>شرح بالصوت والصورة لتسهيل الفهم والحفظ.</p>
+<p>شروحات بالفيديو تجعل التعلم ممتعًا وسهل الفهم.</p>
 </div>
 
 <div class="feature">
 <span>🤖</span>
 <h3>مساعد ذكي</h3>
-<p>يساعد التلميذ في الإجابة عن الأسئلة وشرح الدروس.</p>
+<p>مساعد يعتمد على الذكاء الاصطناعي للإجابة عن أسئلة التلاميذ.</p>
+</div>
+
+<div class="feature">
+<span>🏆</span>
+<h3>شواهد تقديرية</h3>
+<p>شهادات تشجيعية وتحفيزية بعد إنجاز الأنشطة.</p>
+</div>
+
+<div class="feature">
+<span>🌍</span>
+<h3>تعلم في أي مكان</h3>
+<p>الموقع يعمل على الهاتف واللوحة الإلكترونية والحاسوب.</p>
 </div>
 
 </div>
@@ -653,6 +447,8 @@ height:120px;
 
 <br>
 
+<p>📧 contact@aalamisraa.ma</p>
+
 <p>© 2026 جميع الحقوق محفوظة</p>
 
 </footer>
@@ -660,4 +456,3 @@ height:120px;
 </body>
 
 </html>
-  
