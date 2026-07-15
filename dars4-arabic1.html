@@ -61,7 +61,6 @@ padding:15px;
 gap:12px;
 }
 
-
 nav a{
 color:white;
 text-decoration:none;
@@ -70,7 +69,6 @@ padding:10px 18px;
 border-radius:10px;
 transition:.3s;
 }
-
 
 nav a:hover{
 background:#FFD54F;
@@ -85,12 +83,10 @@ background:linear-gradient(135deg,#673AB7,#9C27B0);
 color:white;
 }
 
-
 .hero h2{
 font-size:42px;
 margin-bottom:20px;
 }
-
 
 .hero p{
 font-size:22px;
@@ -136,6 +132,7 @@ margin-bottom:15px;
 .card p{
 font-size:20px;
 line-height:1.8;
+margin-bottom:20px;
 }
 
 
@@ -145,8 +142,17 @@ background:#6A1B9A;
 color:white;
 padding:12px 30px;
 border-radius:10px;
-text-decoration:none;
 font-weight:bold;
+text-decoration:none;
+border:none;
+cursor:pointer;
+transition:.3s;
+}
+
+
+.btn:hover{
+background:#FFD54F;
+color:#4B1E78;
 }
 
 
@@ -158,11 +164,34 @@ padding:40px 20px;
 margin-top:60px;
 }
 
+
+@media(max-width:768px){
+
+header h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:30px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.logo{
+width:90px;
+height:90px;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
+
 
 <header>
 
@@ -174,6 +203,7 @@ margin-top:60px;
 
 </header>
 
+
 <nav>
 
 <a href="index.html">🏠 الرئيسية</a>
@@ -184,34 +214,37 @@ margin-top:60px;
 
 </nav>
 
+
 <section class="hero">
 
 <h2>🌟 تعلم تركيب الكلمات</h2>
 
 <p>
-في هذا الدرس سنتعلم كيف نجمع الحروف لنكوّن كلمات مفيدة ونقرأها بطريقة صحيحة.
+في هذا الدرس سنتعلم كيف نجمع الحروف لنكوّن كلمات مفيدة ونقرأها بطريقة ممتعة.
 </p>
 
 </section>
 <section class="lessons">
+
 
 <div class="card">
 
 <h3>ب + ا + ب</h3>
 
 <p>
-نركب الحروف معاً لنحصل على كلمة:
+نركب الحروف لنحصل على:
 <br><br>
 
 <b>باب</b>
 
-<br><br>
-
-🔊 نقرأ: باب
-
 </p>
 
+<button onclick="speak('باب')" class="btn">
+🔊 اسمع الكلمة
+</button>
+
 </div>
+
 
 
 <div class="card">
@@ -219,18 +252,19 @@ margin-top:60px;
 <h3>ق + ل + م</h3>
 
 <p>
-نركب الحروف معاً لنحصل على كلمة:
+نركب الحروف لنحصل على:
 <br><br>
 
 <b>قلم</b>
 
-<br><br>
-
-🔊 نقرأ: قلم
-
 </p>
 
+<button onclick="speak('قلم')" class="btn">
+🔊 اسمع الكلمة
+</button>
+
 </div>
+
 
 
 <div class="card">
@@ -238,18 +272,19 @@ margin-top:60px;
 <h3>ك + ت + ا + ب</h3>
 
 <p>
-نركب الحروف معاً لنحصل على كلمة:
+نركب الحروف لنحصل على:
 <br><br>
 
 <b>كتاب</b>
 
-<br><br>
-
-🔊 نقرأ: كتاب
-
 </p>
 
+<button onclick="speak('كتاب')" class="btn">
+🔊 اسمع الكلمة
+</button>
+
 </div>
+
 
 
 <div class="card">
@@ -257,29 +292,29 @@ margin-top:60px;
 <h3>ب + ي + ت</h3>
 
 <p>
-نركب الحروف معاً لنحصل على كلمة:
+نركب الحروف لنحصل على:
 <br><br>
 
 <b>بيت</b>
 
-<br><br>
-
-🔊 نقرأ: بيت
-
 </p>
 
+<button onclick="speak('بيت')" class="btn">
+🔊 اسمع الكلمة
+</button>
+
 </div>
+
 
 </section>
 
 
 
-<section style="padding:70px 20px;background:#ffffff;">
+<section style="padding:70px 20px;background:white;">
+
 
 <h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
-
 🎯 تمرين
-
 </h2>
 
 
@@ -296,41 +331,39 @@ margin-top:60px;
 <p style="font-size:32px;text-align:center;line-height:2;">
 
 
-م + د + ر + س + ة = ؟؟
+م + د + ر + س + ة = ؟
 
 <br><br>
 
-ش + م + س = ؟؟
+ش + م + س = ؟
 
 <br><br>
 
-و + ر + د + ة = ؟؟
+و + ر + د + ة = ؟
 
 </p>
 
 
 <p style="text-align:center;font-size:20px;color:#666;">
 
-حاول قراءة الكلمات بعد تركيبها.
+حاول قراءة الكلمات بصوت واضح.
 
 </p>
 
 
 </div>
 
+
 </section>
 <section style="padding:70px 20px;background:#FFF8DC;">
 
 <h2 style="text-align:center;color:#4B1E78;font-size:38px;">
-
 💡 معلومة
-
 </h2>
-
 
 <p style="max-width:900px;margin:30px auto;font-size:22px;text-align:center;line-height:2;">
 
-عندما نجمع الحروف بالترتيب الصحيح نحصل على كلمات لها معنى.
+عندما نرتب الحروف بشكل صحيح نحصل على كلمة لها معنى.
 
 <br><br>
 
@@ -346,7 +379,6 @@ margin-top:60px;
 
 </p>
 
-
 </section>
 
 
@@ -355,16 +387,14 @@ margin-top:60px;
 
 
 <h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
-
 ⭐ نشاط إضافي
-
 </h2>
 
 
 <div style="max-width:900px;margin:auto;background:white;padding:35px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
 
 
-<p style="font-size:24px;line-height:2;text-align:center;">
+<p style="font-size:24px;text-align:center;line-height:2;">
 
 صل الحروف بالكلمة المناسبة:
 
@@ -383,7 +413,6 @@ margin-top:60px;
 <br><br>
 
 ق + م + ر ⟵ قمر
-
 
 </p>
 
@@ -409,8 +438,25 @@ margin-top:60px;
 
 <p>© 2026 جميع الحقوق محفوظة</p>
 
-
 </footer>
+
+
+
+<script>
+
+function speak(word){
+
+let audio = new SpeechSynthesisUtterance(word);
+
+audio.lang = "ar-SA";
+
+audio.rate = 0.8;
+
+speechSynthesis.speak(audio);
+
+}
+
+</script>
 
 
 </body>
