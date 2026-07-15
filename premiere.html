@@ -1,67 +1,297 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الأول ابتدائي</title>
+
+<title>🥇 الأول ابتدائي | عالم إسراء</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-body{
+
+*{
 margin:0;
-font-family:Tahoma,Arial,sans-serif;
-background:#f4f7fb;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
 }
 
 header{
-background:#0d6efd;
-color:white;
-padding:20px;
+
+background:linear-gradient(135deg,#4B1E78,#6A1B9A,#8E24AA);
+
+padding:30px 20px;
+
 text-align:center;
+
+color:white;
+
 }
 
-.container{
-width:90%;
-max-width:1100px;
-margin:30px auto;
+.logo{
+
+width:120px;
+
+height:120px;
+
+border-radius:50%;
+
+background:white;
+
+padding:5px;
+
+border:5px solid #FFD54F;
+
 }
 
-.grid{
+header h1{
+
+margin-top:15px;
+
+font-size:42px;
+
+}
+
+header p{
+
+font-size:20px;
+
+margin-top:10px;
+
+}
+
+nav{
+
+background:#4B1E78;
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+padding:15px;
+
+gap:12px;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+padding:10px 18px;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+background:#FFD54F;
+
+color:#4B1E78;
+
+}
+
+.hero{
+
+padding:70px 20px;
+
+text-align:center;
+
+background:linear-gradient(135deg,#673AB7,#9C27B0);
+
+color:white;
+
+}
+
+.hero h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+max-width:900px;
+
+margin:auto;
+
+line-height:1.8;
+
+}
+
+.subjects{
+
+max-width:1200px;
+
+margin:60px auto;
+
+padding:20px;
+
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
 }
 
 .card{
+
 background:white;
-padding:20px;
-border-radius:15px;
+
+border-radius:20px;
+
+padding:30px;
+
 text-align:center;
-box-shadow:0 4px 10px rgba(0,0,0,.15);
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
 transition:.3s;
+
+border-top:8px solid #6A1B9A;
+
 }
 
 .card:hover{
-transform:translateY(-5px);
+
+transform:translateY(-10px);
+
 }
 
-.card h2{
-color:#0d6efd;
+.card .icon{
+
+font-size:60px;
+
+margin-bottom:20px;
+
 }
 
-button{
-background:#0d6efd;
+.card h3{
+
+color:#4B1E78;
+
+font-size:28px;
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+font-size:18px;
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+background:#6A1B9A;
+
 color:white;
-border:none;
-padding:10px 20px;
-border-radius:8px;
-cursor:pointer;
-font-size:16px;
+
+padding:12px 30px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
 }
 
-button:hover{
-background:#084298;
+.btn:hover{
+
+background:#FFD54F;
+
+color:#4B1E78;
+
 }
+  .subjects-title{
+
+text-align:center;
+
+font-size:40px;
+
+color:#4B1E78;
+
+margin-top:20px;
+
+}
+
+footer{
+
+background:#4B1E78;
+
+color:white;
+
+text-align:center;
+
+padding:40px 20px;
+
+margin-top:60px;
+
+}
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:30px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.logo{
+
+width:90px;
+
+height:90px;
+
+}
+
+}
+
 </style>
 
 </head>
@@ -69,59 +299,192 @@ background:#084298;
 <body>
 
 <header>
-<h1>📚 الأول ابتدائي</h1>
-<p>اختر المادة التي تريد دراستها</p>
+
+<img src="images/logo.png" class="logo" alt="شعار عالم إسراء">
+
+<h1>🥇 الأول ابتدائي</h1>
+
+<p>مرحباً بك في المستوى الأول الابتدائي</p>
+
 </header>
 
-<div class="container">
+<nav>
 
-<div class="grid">
+<a href="index.html">🏠 الرئيسية</a>
 
-<div class="card">
-<h2>📖 اللغة العربية</h2>
-<a href="arabic1.html">
-<button>دخول</button>
-</a>
-</div>
+<a href="lessons.html">📚 الدروس</a>
 
-<div class="card">
-<h2>🇫🇷 اللغة الفرنسية</h2>
-<a href="french1.html">
-<button>دخول</button>
-</a>
-</div>
+<a href="worksheets.html">📄 التمارين</a>
 
-<div class="card">
-<h2>➗ الرياضيات</h2>
-<a href="math1.html">
-<button>دخول</button>
-</a>
-</div>
+<a href="exams.html">📝 الامتحانات</a>
 
-<div class="card">
-<h2>🔬 النشاط العلمي</h2>
-<a href="science1.html">
-<button>دخول</button>
-</a>
-</div>
+<a href="videos.html">🎥 الفيديوهات</a>
+
+</nav>
+
+<section class="hero">
+
+<h2>ابدأ رحلة التعلم</h2>
+
+<p>
+
+اختر المادة التي تريد تعلمها واستمتع بالدروس والأنشطة والتمارين.
+
+</p>
+
+</section>
+
+<h2 class="subjects-title">📚 المواد الدراسية</h2>
+
+<section class="subjects">
 
 <div class="card">
-<h2>☪️ التربية الإسلامية</h2>
-<a href="islam1.html">
-<button>دخول</button>
-</a>
+<div class="icon">📖</div>
+<h3>اللغة العربية</h3>
+<p>تعلم القراءة والكتابة والحروف والكلمات.</p>
+<a href="arabic1.html" class="btn">ابدأ</a>
 </div>
 
 <div class="card">
-<h2>🎨 التربية الفنية</h2>
-<a href="art1.html">
-<button>دخول</button>
-</a>
+<div class="icon">🇫🇷</div>
+<h3>اللغة الفرنسية</h3>
+<p>تعلم الحروف والكلمات والجمل البسيطة.</p>
+<a href="#" class="btn">قريباً</a>
+</div>
+
+<div class="card">
+<div class="icon">➕</div>
+<h3>الرياضيات</h3>
+<p>الأعداد والجمع والطرح والتمارين.</p>
+<a href="#" class="btn">قريباً</a>
+</div>
+
+<div class="card">
+<div class="icon">🔬</div>
+<h3>النشاط العلمي</h3>
+<p>اكتشف العالم من حولك بتجارب مبسطة.</p>
+<a href="#" class="btn">قريباً</a>
+</div>
+
+<div class="card">
+<div class="icon">🕌</div>
+<h3>التربية الإسلامية</h3>
+<p>تعلم السور والآداب والقيم الإسلامية.</p>
+<a href="#" class="btn">قريباً</a>
+</div>
+
+<div class="card">
+<div class="icon">🎨</div>
+<h3>التربية الفنية</h3>
+<p>أنشطة الرسم والتلوين والإبداع.</p>
+<a href="#" class="btn">قريباً</a>
+</div>
+
+</section>
+  <!-- قسم الإحصائيات -->
+
+<section style="padding:70px 20px;background:#f8f5ff;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:50px;">
+📊 عالم إسراء بالأرقام
+</h2>
+
+<div style="max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;">
+
+<div class="card">
+<div class="icon">📚</div>
+<h3>+100</h3>
+<p>درس تعليمي</p>
+</div>
+
+<div class="card">
+<div class="icon">📝</div>
+<h3>+500</h3>
+<p>تمرين</p>
+</div>
+
+<div class="card">
+<div class="icon">🎥</div>
+<h3>+50</h3>
+<p>فيديو تعليمي</p>
+</div>
+
+<div class="card">
+<div class="icon">🏆</div>
+<h3>+100</h3>
+<p>شهادة تقديرية</p>
 </div>
 
 </div>
 
+</section>
+
+<!-- قسم نصيحة اليوم -->
+
+<section style="padding:70px 20px;background:white;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:35px;">
+💡 نصيحة اليوم
+</h2>
+
+<div style="max-width:900px;margin:auto;background:#fff8dc;padding:35px;border-radius:20px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.12);">
+
+<h3 style="font-size:30px;color:#6A1B9A;">
+📖 اقرأ كل يوم لمدة 20 دقيقة
+</h3>
+
+<p style="font-size:22px;line-height:2;margin-top:20px;">
+القراءة اليومية تساعد على تنمية الذكاء، وتقوية الذاكرة، وتحسين التعبير والكتابة.
+</p>
+
 </div>
+
+</section>
+
+<!-- قسم المميزات -->
+
+<section style="padding:70px 20px;background:#4B1E78;color:white;">
+
+<h2 style="text-align:center;font-size:40px;margin-bottom:50px;">
+⭐ لماذا يحب التلاميذ عالم إسراء؟
+</h2>
+
+<div style="max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;">
+
+<div class="card">
+<div class="icon">🎮</div>
+<h3>تعلم ممتع</h3>
+<p>أنشطة وألعاب تعليمية تجعل التعلم ممتعاً.</p>
+</div>
+
+<div class="card">
+<div class="icon">🤖</div>
+<h3>ذكاء اصطناعي</h3>
+<p>مساعد ذكي يساعد التلميذ في فهم الدروس.</p>
+</div>
+
+<div class="card">
+<div class="icon">🌍</div>
+<h3>في أي مكان</h3>
+<p>اشتغل من الهاتف أو الحاسوب أو اللوحة الإلكترونية.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>🌍 عالم إسراء - عالم المعرفة</h2>
+
+<p>منصة التعليم الابتدائي المغربي</p>
+
+<br>
+
+<p>© 2026 جميع الحقوق محفوظة</p>
+
+</footer>
 
 </body>
+
 </html>
