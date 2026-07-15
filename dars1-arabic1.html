@@ -1,101 +1,195 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>الدرس الأول - التعارف</title>
+
+<title>الدرس الأول | الحروف الهجائية | عالم إسراء</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Tahoma,Arial,sans-serif;
+font-family:'Cairo',sans-serif;
 }
 
 body{
-background:#f4f7fb;
-line-height:1.9;
+background:#f5f7fb;
 color:#333;
 }
 
 header{
-background:linear-gradient(135deg,#0d6efd,#4dabf7);
+background:linear-gradient(135deg,#4B1E78,#6A1B9A,#8E24AA);
 color:white;
 text-align:center;
-padding:50px 20px;
+padding:30px 20px;
 }
 
-.container{
-max-width:1100px;
-margin:30px auto;
-padding:20px;
-}
-
-.section{
+.logo{
+width:120px;
+height:120px;
+border-radius:50%;
 background:white;
-padding:25px;
-margin-bottom:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+padding:5px;
+border:5px solid #FFD54F;
 }
 
-.section h2{
-color:#0d6efd;
-margin-bottom:15px;
-}
-
-img{
-width:100%;
-max-width:600px;
-display:block;
-margin:20px auto;
-border-radius:10px;
-}
-
-iframe{
-width:100%;
-height:450px;
-border:none;
-border-radius:10px;
-}
-
-.question{
-background:#eef5ff;
-padding:15px;
-border-radius:10px;
+header h1{
 margin-top:15px;
+font-size:42px;
 }
 
-.answer{
-background:#d4edda;
-padding:15px;
-border-radius:10px;
+header p{
 margin-top:10px;
+font-size:20px;
+}
+
+nav{
+background:#4B1E78;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px;
+padding:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:10px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+background:#FFD54F;
+color:#4B1E78;
+}
+
+.hero{
+background:linear-gradient(135deg,#673AB7,#9C27B0);
+padding:70px 20px;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.8;
+max-width:900px;
+margin:auto;
+}
+
+.letters{
+max-width:1200px;
+margin:60px auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+gap:20px;
+}
+
+.letter{
+background:white;
+border-radius:20px;
+padding:25px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,.12);
+transition:.3s;
+cursor:pointer;
+}
+
+.letter:hover{
+transform:translateY(-8px);
+background:#FFF8DC;
+}
+
+.letter h3{
+font-size:60px;
+color:#6A1B9A;
+margin-bottom:10px;
+}
+
+.letter p{
+font-size:22px;
+font-weight:bold;
+color:#444;
+}
+
+.exercise{
+max-width:1000px;
+margin:70px auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.exercise h2{
+text-align:center;
+color:#4B1E78;
+margin-bottom:30px;
+font-size:36px;
 }
 
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:12px 25px;
-background:#0d6efd;
+background:#6A1B9A;
 color:white;
+padding:14px 30px;
+border-radius:10px;
 text-decoration:none;
-border-radius:8px;
 font-weight:bold;
+transition:.3s;
 }
 
 .btn:hover{
-background:#084298;
+background:#FFD54F;
+color:#4B1E78;
 }
 
 footer{
-background:#0d6efd;
+margin-top:70px;
+background:#4B1E78;
 color:white;
 text-align:center;
-padding:20px;
-margin-top:40px;
+padding:35px;
 }
+
+@media(max-width:768px){
+
+.logo{
+width:90px;
+height:90px;
+}
+
+header h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:30px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
+
 </style>
 
 </head>
@@ -104,105 +198,266 @@ margin-top:40px;
 
 <header>
 
+<img src="images/logo.png" class="logo" alt="شعار عالم إسراء">
+
 <h1>📖 الدرس الأول</h1>
 
-<p>التعارف</p>
+<p>الحروف الهجائية</p>
 
 </header>
 
-<div class="container">
+<nav>
 
-<div class="section">
+<a href="index.html">🏠 الرئيسية</a>
 
-<h2>🎯 أهداف الدرس</h2>
+<a href="premiere.html">🥇 الأول ابتدائي</a>
 
-<ul>
-<li>أن يعرف التلميذ نفسه.</li>
-<li>أن يقدم اسمه لزملائه.</li>
-<li>أن يستعمل عبارات التحية.</li>
-</ul>
+<a href="arabic1.html">📚 اللغة العربية</a>
 
-</div>
+</nav>
 
-<div class="section">
+<section class="hero">
 
-<h2>📚 الشرح</h2>
+<h2>تعلم الحروف الهجائية</h2>
 
 <p>
 
-السلام عليكم.
+تعرف على الحروف العربية، ثم انتقل إلى التمارين لاختبار معلوماتك.
 
-اسمي أحمد.
+</p>
 
-ما اسمك؟
+</section>
 
-أنا تلميذ في السنة الأولى ابتدائي.
+<section class="letters">
+  <div class="letter">
+<h3>أ</h3>
+<p>أسد 🦁</p>
+</div>
 
-تشرفت بمعرفتك.
+<div class="letter">
+<h3>ب</h3>
+<p>بطة 🦆</p>
+</div>
 
+<div class="letter">
+<h3>ت</h3>
+<p>تفاحة 🍎</p>
+</div>
+
+<div class="letter">
+<h3>ث</h3>
+<p>ثعلب 🦊</p>
+</div>
+
+<div class="letter">
+<h3>ج</h3>
+<p>جمل 🐪</p>
+</div>
+
+<div class="letter">
+<h3>ح</h3>
+<p>حصان 🐎</p>
+</div>
+
+<div class="letter">
+<h3>خ</h3>
+<p>خروف 🐑</p>
+</div>
+
+<div class="letter">
+<h3>د</h3>
+<p>ديك 🐓</p>
+</div>
+
+<div class="letter">
+<h3>ذ</h3>
+<p>ذرة 🌽</p>
+</div>
+
+<div class="letter">
+<h3>ر</h3>
+<p>رمان 🍎</p>
+</div>
+
+<div class="letter">
+<h3>ز</h3>
+<p>زرافة 🦒</p>
+</div>
+
+<div class="letter">
+<h3>س</h3>
+<p>سمكة 🐟</p>
+</div>
+
+<div class="letter">
+<h3>ش</h3>
+<p>شمس ☀️</p>
+</div>
+
+<div class="letter">
+<h3>ص</h3>
+<p>صقر 🦅</p>
+</div>
+
+<div class="letter">
+<h3>ض</h3>
+<p>ضفدع 🐸</p>
+</div>
+
+<div class="letter">
+<h3>ط</h3>
+<p>طائرة ✈️</p>
+</div>
+
+<div class="letter">
+<h3>ظ</h3>
+<p>ظرف ✉️</p>
+</div>
+
+<div class="letter">
+<h3>ع</h3>
+<p>عصفور 🐦</p>
+</div>
+
+<div class="letter">
+<h3>غ</h3>
+<p>غزال 🦌</p>
+</div>
+
+<div class="letter">
+<h3>ف</h3>
+<p>فيل 🐘</p>
+</div>
+
+<div class="letter">
+<h3>ق</h3>
+<p>قمر 🌙</p>
+</div>
+
+<div class="letter">
+<h3>ك</h3>
+<p>كتاب 📖</p>
+</div>
+
+<div class="letter">
+<h3>ل</h3>
+<p>ليمون 🍋</p>
+</div>
+
+<div class="letter">
+<h3>م</h3>
+<p>موز 🍌</p>
+</div>
+
+<div class="letter">
+<h3>ن</h3>
+<p>نحلة 🐝</p>
+</div>
+
+<div class="letter">
+<h3>هـ</h3>
+<p>هلال 🌙</p>
+</div>
+
+<div class="letter">
+<h3>و</h3>
+<p>وردة 🌹</p>
+</div>
+
+<div class="letter">
+<h3>ي</h3>
+<p>يد ✋</p>
+</div>
+
+</section>
+<section class="exercise">
+
+<h2>✍️ تمرين سريع</h2>
+
+<p style="font-size:22px;text-align:center;margin-bottom:25px;">
+ما هو الحرف الأول في كلمة <strong>أسد 🦁</strong>؟
+</p>
+
+<div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
+
+<button class="btn" onclick="checkAnswer('أ')">أ</button>
+
+<button class="btn" onclick="checkAnswer('ب')">ب</button>
+
+<button class="btn" onclick="checkAnswer('ت')">ت</button>
+
+</div>
+
+<p id="result" style="text-align:center;font-size:24px;margin-top:30px;font-weight:bold;"></p>
+
+</section>
+
+<section style="padding:70px 20px;background:#f8f5ff;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
+🏆 تقدمك في الدرس
+</h2>
+
+<div style="max-width:900px;margin:auto;">
+
+<div style="background:#ddd;height:28px;border-radius:20px;overflow:hidden;">
+
+<div style="width:35%;height:28px;background:#6A1B9A;"></div>
+
+</div>
+
+<p style="text-align:center;margin-top:20px;font-size:20px;">
+لقد أنهيت 35٪ من هذا الدرس.
 </p>
 
 </div>
 
-<div class="section">
+<div style="text-align:center;margin-top:40px;">
 
-<h2>🖼 صورة الدرس</h2>
-
-<img src="images/logo.png" alt="التعارف">
-
-</div>
-
-<div class="section">
-
-<h2>🎥 فيديو تعليمي</h2>
-
-<iframe src="https://www.youtube.com/embed/mbG1yBwUEks"
-allowfullscreen></iframe>
-
-</div>
-
-<div class="section">
-
-<h2>✍️ تمرين</h2>
-
-<div class="question">
-
-عرف بنفسك باستعمال:
-
-السلام عليكم...
-
-اسمي...
-
-أنا تلميذ...
-
-</div>
-
-<div class="answer">
-
-✅ مثال للإجابة:
-
-السلام عليكم.
-
-اسمي إسراء.
-
-أنا تلميذة في السنة الأولى ابتدائي.
-
-</div>
-
-</div>
-
-<a class="btn" href="doros-arabic1.html">
-⬅ العودة إلى الدروس
+<a href="dars2-arabic1.html" class="btn">
+➡️ الانتقال إلى الدرس الثاني
 </a>
 
 </div>
 
+</section>
+
 <footer>
 
-© 2026 عالم إسراء عالم المعرفة
+<h2>🌍 عالم إسراء - عالم المعرفة</h2>
+
+<p>تعلم اليوم... لتنجح غداً.</p>
+
+<br>
+
+<p>© 2026 جميع الحقوق محفوظة</p>
 
 </footer>
 
+<script>
+
+function checkAnswer(answer){
+
+const result=document.getElementById("result");
+
+if(answer==="أ"){
+
+result.innerHTML="✅ أحسنت! الإجابة صحيحة.";
+
+result.style.color="green";
+
+}else{
+
+result.innerHTML="❌ حاول مرة أخرى.";
+
+result.style.color="red";
+
+}
+
+}
+
+</script>
+
 </body>
+
 </html>
-تحديث الدرس الأول
