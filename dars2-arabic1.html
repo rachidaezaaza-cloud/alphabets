@@ -2,10 +2,14 @@
 <html lang="ar" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>الدرس الثاني - الحروف العربية</title>
+<title>الدرس الثاني | الحركات | عالم إسراء</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -13,93 +17,160 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Tahoma,Arial,sans-serif;
+font-family:'Cairo',sans-serif;
 }
 
 body{
-background:#f4f7fb;
+background:#f5f7fb;
 color:#333;
-line-height:1.9;
 }
 
 header{
-background:linear-gradient(135deg,#0d6efd,#4dabf7);
+background:linear-gradient(135deg,#4B1E78,#6A1B9A,#8E24AA);
 color:white;
 text-align:center;
-padding:50px 20px;
+padding:30px 20px;
 }
 
-.container{
-max-width:1100px;
-margin:30px auto;
-padding:20px;
-}
-
-.section{
+.logo{
+width:120px;
+height:120px;
+border-radius:50%;
 background:white;
-padding:25px;
-margin-bottom:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+padding:5px;
+border:5px solid #FFD54F;
 }
 
-.section h2{
-color:#0d6efd;
+header h1{
+margin-top:15px;
+font-size:42px;
+}
+
+header p{
+margin-top:10px;
+font-size:20px;
+}
+
+nav{
+background:#4B1E78;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px;
+padding:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:10px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+background:#FFD54F;
+color:#4B1E78;
+}
+
+.hero{
+background:linear-gradient(135deg,#673AB7,#9C27B0);
+padding:70px 20px;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.8;
+max-width:900px;
+margin:auto;
+}
+
+.harakat{
+max-width:1200px;
+margin:60px auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+border-top:8px solid #6A1B9A;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+font-size:50px;
+color:#6A1B9A;
 margin-bottom:15px;
 }
 
-.letters{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(70px,1fr));
-gap:15px;
-margin-top:20px;
-}
-
-.letter{
-background:#0d6efd;
-color:white;
-font-size:35px;
-font-weight:bold;
-padding:20px;
-border-radius:12px;
-text-align:center;
-}
-
-.question{
-background:#eef5ff;
-padding:15px;
-border-radius:10px;
-margin-top:20px;
-}
-
-.answer{
-background:#d4edda;
-padding:15px;
-border-radius:10px;
-margin-top:10px;
+.card p{
+font-size:22px;
+line-height:1.8;
 }
 
 .btn{
 display:inline-block;
 margin-top:20px;
-padding:12px 25px;
-background:#0d6efd;
+background:#6A1B9A;
 color:white;
+padding:14px 30px;
+border-radius:10px;
 text-decoration:none;
-border-radius:8px;
 font-weight:bold;
+transition:.3s;
 }
 
 .btn:hover{
-background:#084298;
+background:#FFD54F;
+color:#4B1E78;
 }
 
 footer{
-background:#0d6efd;
+margin-top:70px;
+background:#4B1E78;
 color:white;
 text-align:center;
-padding:20px;
-margin-top:40px;
+padding:35px;
+}
+
+@media(max-width:768px){
+
+.logo{
+width:90px;
+height:90px;
+}
+
+header h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:30px;
+}
+
+.hero p{
+font-size:18px;
+}
+
 }
 
 </style>
@@ -110,100 +181,656 @@ margin-top:40px;
 
 <header>
 
-<h1>📖 الدرس الثاني</h1>
+<img src="images/logo.png" class="logo" alt="شعار عالم إسراء">
 
-<p>الحروف العربية</p>
+<h1>📝 الدرس الثاني</h1>
+
+<p>الحركات</p>
 
 </header>
 
-<div class="container">
+<nav>
 
-<div class="section">
+<a href="index.html">🏠 الرئيسية</a>
 
-<h2>🎯 أهداف الدرس</h2>
+<a href="premiere.html">🥇 الأول ابتدائي</a>
 
-<ul>
+<a href="arabic1.html">📖 اللغة العربية</a>
 
-<li>التعرف على الحروف العربية.</li>
+</nav>
 
-<li>تمييز شكل كل حرف.</li>
+<section class="hero">
 
-<li>قراءة الحروف بطريقة صحيحة.</li>
+<h2>تعلم الحركات</h2>
 
-</ul>
+<p>
 
-</div>
+سنتعرف في هذا الدرس على الفتحة والضمة والكسرة والسكون مع أمثلة سهلة.
 
-<div class="section">
+</p>
 
-<h2>🔤 الحروف العربية</h2>
+</section>
 
-<div class="letters">
+<section class="harakat">
+  <div class="card">
 
-<div class="letter">أ</div>
-<div class="letter">ب</div>
-<div class="letter">ت</div>
-<div class="letter">ث</div>
-<div class="letter">ج</div>
-<div class="letter">ح</div>
-<div class="letter">خ</div>
-<div class="letter">د</div>
-<div class="letter">ذ</div>
-<div class="letter">ر</div>
-<div class="letter">ز</div>
-<div class="letter">س</div>
-<div class="letter">ش</div>
-<div class="letter">ص</div>
-<div class="letter">ض</div>
-<div class="letter">ط</div>
-<div class="letter">ظ</div>
-<div class="letter">ع</div>
-<div class="letter">غ</div>
-<div class="letter">ف</div>
-<div class="letter">ق</div>
-<div class="letter">ك</div>
-<div class="letter">ل</div>
-<div class="letter">م</div>
-<div class="letter">ن</div>
-<div class="letter">هـ</div>
-<div class="letter">و</div>
-<div class="letter">ي</div>
+<h3>َ</h3>
+
+<p>
+
+<b>الفتحة</b><br><br>
+
+أَ - بَ - تَ - ثَ<br><br>
+
+مثال: أَسَد
+
+</p>
 
 </div>
 
-</div>
+<div class="card">
 
-<div class="section">
+<h3>ُ</h3>
 
-<h2>✍️ تمرين</h2>
+<p>
 
-<div class="question">
+<b>الضمة</b><br><br>
 
-اقرأ الحروف التالية بصوت مرتفع:
+أُ - بُ - تُ - ثُ<br><br>
 
-أ - ب - ت - ث - ج
+مثال: كُرَة
 
-</div>
-
-<div class="answer">
-
-✅ أحسنت، كرر قراءة الحروف حتى تحفظها.
+</p>
 
 </div>
 
+<div class="card">
+
+<h3>ِ</h3>
+
+<p>
+
+<b>الكسرة</b><br><br>
+
+أِ - بِ - تِ - ثِ<br><br>
+
+مثال: سِمَك
+
+</p>
+
 </div>
 
-<a class="btn" href="doros-arabic1.html">
+<div class="card">
 
-⬅ العودة إلى الدروس
+<h3>ْ</h3>
 
-</a>
+<p>
+
+<b>السكون</b><br><br>
+
+أْ - بْ - تْ - ثْ<br><br>
+
+مثال: أَبْ
+
+</p>
 
 </div>
 
+</section>
+
+<section style="padding:70px 20px;background:#ffffff;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
+
+🎯 تمرين
+
+</h2>
+
+<div style="max-width:900px;margin:auto;background:#f8f5ff;padding:35px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
+
+<p style="font-size:24px;line-height:2;text-align:center;">
+
+ضع الحركة المناسبة:
+
+</p>
+
+<p style="font-size:30px;text-align:center;line-height:2;">
+
+ب □
+
+&nbsp;&nbsp;&nbsp;
+
+ت □
+
+&nbsp;&nbsp;&nbsp;
+
+م □
+
+&nbsp;&nbsp;&nbsp;
+
+س □
+
+</p>
+
+<p style="text-align:center;font-size:20px;color:#666;">
+
+حاول قراءة الحروف بعد وضع الحركات.
+
+</p>
+
+</div>
+
+</section>
+
+<section style="padding:70px 20px;background:#FFF8DC;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;">
+
+💡 معلومة
+
+</h2>
+
+<p style="max-width:900px;margin:30px auto;font-size:22px;text-align:center;line-height:2;">
+
+<div class="card">
+
+<h3>َ</h3>
+
+<p>
+
+<b>الفتحة</b><br><br>
+
+أَ - بَ - تَ - ثَ<br><br>
+
+مثال: أَسَد
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ُ</h3>
+
+<p>
+
+<b>الضمة</b><br><br>
+
+أُ - بُ - تُ - ثُ<br><br>
+
+مثال: كُرَة
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ِ</h3>
+
+<p>
+
+<b>الكسرة</b><br><br>
+
+أِ - بِ - تِ - ثِ<br><br>
+
+مثال: سِمَك
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ْ</h3>
+
+<p>
+
+<b>السكون</b><br><br>
+
+أْ - بْ - تْ - ثْ<br><br>
+
+مثال: أَبْ
+
+</p>
+
+</div>
+
+</section>
+
+<section style="padding:70px 20px;background:#ffffff;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
+
+🎯 تمرين
+
+</h2>
+
+<div style="max-width:900px;margin:auto;background:#f8f5ff;padding:35px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
+
+<p style="font-size:24px;line-height:2;text-align:center;">
+
+ضع الحركة المناسبة:
+
+</p>
+
+<p style="font-size:30px;text-align:center;line-height:2;">
+
+ب □
+
+&nbsp;&nbsp;&nbsp;
+
+ت □
+
+&nbsp;&nbsp;&nbsp;
+
+م □
+
+&nbsp;&nbsp;&nbsp;
+
+س □
+
+</p>
+
+<p style="text-align:center;font-size:20px;color:#666;">
+
+حاول قراءة الحروف بعد وضع الحركات.
+
+</p>
+
+</div>
+
+</section>
+
+<section style="padding:70px 20px;background:#FFF8DC;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;">
+
+💡 معلومة
+
+</h2>
+
+<p style="max-width:900px;margin:30px auto;font-size:22px;text-align:center;line-height:2;">
+
+<div class="card">
+
+<h3>َ</h3>
+
+<p>
+
+<b>الفتحة</b><br><br>
+
+أَ - بَ - تَ - ثَ<br><br>
+
+مثال: أَسَد
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ُ</h3>
+
+<p>
+
+<b>الضمة</b><br><br>
+
+أُ - بُ - تُ - ثُ<br><br>
+
+مثال: كُرَة
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ِ</h3>
+
+<p>
+
+<b>الكسرة</b><br><br>
+
+أِ - بِ - تِ - ثِ<br><br>
+
+مثال: سِمَك
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ْ</h3>
+
+<p>
+
+<b>السكون</b><br><br>
+
+أْ - بْ - تْ - ثْ<br><br>
+
+مثال: أَبْ
+
+</p>
+
+</div>
+
+</section>
+
+<section style="padding:70px 20px;background:#ffffff;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
+
+🎯 تمرين
+
+</h2>
+
+<div style="max-width:900px;margin:auto;background:#f8f5ff;padding:35px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
+
+<p style="font-size:24px;line-height:2;text-align:center;">
+
+ضع الحركة المناسبة:
+
+</p>
+
+<p style="font-size:30px;text-align:center;line-height:2;">
+
+ب □
+
+&nbsp;&nbsp;&nbsp;
+
+ت □
+
+&nbsp;&nbsp;&nbsp;
+
+م □
+
+&nbsp;&nbsp;&nbsp;
+
+س □
+
+</p>
+
+<p style="text-align:center;font-size:20px;color:#666;">
+
+حاول قراءة الحروف بعد وضع الحركات.
+
+</p>
+
+</div>
+
+</section>
+
+<section style="padding:70px 20px;background:#FFF8DC;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;">
+
+💡 معلومة
+
+</h2>
+
+<p style="max-width:900px;margin:30px auto;font-size:22px;text-align:center;line-height:2;">
+<div class="card">
+
+<h3>َ</h3>
+
+<p>
+
+<b>الفتحة</b><br><br>
+
+أَ - بَ - تَ - ثَ<br><br>
+
+مثال: أَسَد
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ُ</h3>
+
+<p>
+
+<b>الضمة</b><br><br>
+
+أُ - بُ - تُ - ثُ<br><br>
+
+مثال: كُرَة
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ِ</h3>
+
+<p>
+
+<b>الكسرة</b><br><br>
+
+أِ - بِ - تِ - ثِ<br><br>
+
+مثال: سِمَك
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ْ</h3>
+
+<p>
+
+<b>السكون</b><br><br>
+
+أْ - بْ - تْ - ثْ<br><br>
+
+مثال: أَبْ
+
+</p>
+
+</div>
+
+</section>
+
+<section style="padding:70px 20px;background:#ffffff;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
+
+🎯 تمرين
+
+</h2>
+
+<div style="max-width:900px;margin:auto;background:#f8f5ff;padding:35px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
+
+<p style="font-size:24px;line-height:2;text-align:center;">
+
+ضع الحركة المناسبة:
+
+</p>
+
+<p style="font-size:30px;text-align:center;line-height:2;">
+
+ب □
+
+&nbsp;&nbsp;&nbsp;
+
+ت □
+
+&nbsp;&nbsp;&nbsp;
+
+م □
+
+&nbsp;&nbsp;&nbsp;
+
+س □
+
+</p>
+
+<p style="text-align:center;font-size:20px;color:#666;">
+
+حاول قراءة الحروف بعد وضع الحركات.
+
+</p>
+
+</div>
+
+</section>
+
+<section style="padding:70px 20px;background:#FFF8DC;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;">
+
+💡 معلومة
+
+</h2>
+
+<p style="max-width:900px;margin:30px auto;font-size:22px;text-align:center;line-height:2;">
+
+<div class="card">
+
+<h3>َ</h3>
+
+<p>
+
+<b>الفتحة</b><br><br>
+
+أَ - بَ - تَ - ثَ
+
+<br><br>
+
+مثال: أَسَد
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ُ</h3>
+
+<p>
+
+<b>الضمة</b><br><br>
+
+أُ - بُ - تُ - ثُ
+
+<br><br>
+
+مثال: كُرَة
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ِ</h3>
+
+<p>
+
+<b>الكسرة</b><br><br>
+
+أِ - بِ - تِ - ثِ
+
+<br><br>
+
+مثال: سِمَك
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ْ</h3>
+
+<p>
+
+<b>السكون</b><br><br>
+
+أْ - بْ - تْ - ثْ
+
+<br><br>
+
+مثال: أَبْ
+
+</p>
+
+</div>
+
+</section>
+
+<section style="padding:70px 20px;background:#ffffff;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
+
+🎯 تمرين
+
+</h2>
+
+<div style="max-width:900px;margin:auto;background:#f8f5ff;padding:35px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
+
+<p style="font-size:24px;line-height:2;text-align:center;">
+
+ضع الحركة المناسبة على الحروف التالية:
+
+</p>
+
+<p style="font-size:32px;text-align:center;line-height:2;">
+
+ب □ &nbsp;&nbsp;&nbsp;
+
+ت □ &nbsp;&nbsp;&nbsp;
+
+م □ &nbsp;&nbsp;&nbsp;
+
+س □
+
+</p>
+
+<p style="text-align:center;font-size:20px;color:#666;">
+
+جرّب الفتحة، ثم الضمة، ثم الكسرة، ثم السكون.
+
+</p>
+
+</div>
+
+</section>
+
+<section style="padding:70px 20px;background:#FFF8DC;">
+
+<h2 style="text-align:center;color:#4B1E78;font-size:38px;">
+
+💡 معلومة
+
+</h2>
+
+<p style="max-width:900px;margin:30px auto;font-size:22px;text-align:center;line-height:2;">
+
+الحركات تساعدنا على قراءة الكلمات بطريقة صحيحة، لذلك يجب التدرب عليها كل يوم.
+
+</p>
+
+</section>
 <footer>
 
-© 2026 عالم إسراء عالم المعرفة
+<h2>🌍 عالم إسراء - عالم المعرفة</h2>
+
+<p>منصة التعليم الابتدائي المغربي</p>
+
+<br>
+
+<p>📖 تعلم اليوم... لتنجح غداً.</p>
+
+<br>
+
+<p>© 2026 جميع الحقوق محفوظة</p>
 
 </footer>
 
