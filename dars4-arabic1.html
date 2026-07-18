@@ -4,10 +4,9 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>📖 الدرس الرابع | تركيب كلمات | عالم إسراء</title>
+<title>📖 الدرس الرابع | تركيب الكلمات | عالم إسراء عالم المعرفة</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
@@ -18,11 +17,13 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Cairo',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:#f5f7fb;
+background:#f4f7fb;
 color:#333;
+overflow-x:hidden;
 }
 
 header{
@@ -30,42 +31,72 @@ background:linear-gradient(135deg,#4B1E78,#6A1B9A,#8E24AA);
 padding:30px 20px;
 text-align:center;
 color:white;
+position:relative;
+overflow:hidden;
+}
+
+header::before{
+content:"";
+position:absolute;
+width:350px;
+height:350px;
+background:rgba(255,255,255,.08);
+border-radius:50%;
+top:-180px;
+left:-120px;
+}
+
+header::after{
+content:"";
+position:absolute;
+width:300px;
+height:300px;
+background:rgba(255,255,255,.06);
+border-radius:50%;
+bottom:-170px;
+right:-100px;
 }
 
 .logo{
 width:120px;
 height:120px;
 background:white;
-padding:5px;
+padding:6px;
 border-radius:50%;
 border:5px solid #FFD54F;
+position:relative;
+z-index:2;
 }
 
 header h1{
 margin-top:15px;
 font-size:42px;
+position:relative;
+z-index:2;
 }
 
 header p{
-font-size:20px;
+font-size:22px;
 margin-top:10px;
+position:relative;
+z-index:2;
 }
-
 
 nav{
 background:#4B1E78;
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
+gap:15px;
 padding:15px;
-gap:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 nav a{
 color:white;
 text-decoration:none;
 font-weight:bold;
-padding:10px 18px;
+padding:12px 22px;
 border-radius:10px;
 transition:.3s;
 }
@@ -73,28 +104,238 @@ transition:.3s;
 nav a:hover{
 background:#FFD54F;
 color:#4B1E78;
+transform:translateY(-3px);
 }
 
-
 .hero{
-padding:70px 20px;
-text-align:center;
+
 background:linear-gradient(135deg,#673AB7,#9C27B0);
+
+padding:80px 20px;
+
+text-align:center;
+
 color:white;
+
+}
+
+.hero img{
+
+width:220px;
+
+margin:25px auto;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+animation:float 3s ease-in-out infinite;
+
 }
 
 .hero h2{
-font-size:42px;
+
+font-size:44px;
+
 margin-bottom:20px;
+
 }
 
 .hero p{
-font-size:22px;
+
+font-size:23px;
+
 max-width:900px;
+
 margin:auto;
-line-height:1.8;
+
+line-height:2;
+
 }
 
+@keyframes float{
+
+0%{transform:translateY(0);}
+
+50%{transform:translateY(-12px);}
+
+100%{transform:translateY(0);}
+
+}
+
+.score-board{
+
+max-width:1100px;
+
+margin:40px auto;
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.score{
+
+font-size:30px;
+
+font-weight:bold;
+
+color:#4B1E78;
+
+}
+
+.stars{
+
+font-size:34px;
+
+color:#FFD700;
+
+}
+
+.progress{
+
+width:250px;
+
+height:18px;
+
+background:#ddd;
+
+border-radius:50px;
+
+overflow:hidden;
+
+}
+
+.progress span{
+
+display:block;
+
+height:100%;
+
+width:0%;
+
+background:#4CAF50;
+
+transition:.5s;
+
+}
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:30px;
+
+}
+
+.hero h2{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.logo{
+
+width:90px;
+
+height:90px;
+
+}
+
+.score-board{
+
+justify-content:center;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<img src="images/logo.png" class="logo" alt="شعار عالم إسراء">
+
+<h1>📖 الدرس الرابع</h1>
+
+<p>تركيب الكلمات بطريقة تفاعلية</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">🏠 الرئيسية</a>
+
+<a href="premiere.html">🥇 الأول ابتدائي</a>
+
+<a href="arabic1.html">📚 اللغة العربية</a>
+
+</nav>
+
+<section class="hero">
+
+<h2>🌟 تعلم تركيب الكلمات</h2>
+
+<img src="images/israe.png" alt="إسراء">
+
+<p>
+
+سنتعلم في هذا الدرس كيف نجمع الحروف لنكوّن كلمات صحيحة بطريقة ممتعة وتفاعلية.
+
+</p>
+
+</section>
+
+<section class="score-board">
+
+<div class="score">
+
+🏆 النقاط:
+<span id="score">0</span>/4
+
+</div>
+
+<div class="stars">
+
+⭐⭐⭐⭐
+
+</div>
+
+<div class="progress">
+
+<span id="progressBar"></span>
+
+</div>
+
+</section>
+<section class="lessons">
+
+<style>
 
 .lessons{
 max-width:1200px;
@@ -105,10 +346,9 @@ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:25px;
 }
 
-
 .card{
 background:white;
-border-radius:20px;
+border-radius:25px;
 padding:30px;
 text-align:center;
 box-shadow:0 10px 25px rgba(0,0,0,.12);
@@ -116,11 +356,16 @@ border-top:8px solid #6A1B9A;
 transition:.3s;
 }
 
-
 .card:hover{
 transform:translateY(-10px);
 }
 
+.card img{
+width:150px;
+height:150px;
+object-fit:contain;
+margin-bottom:20px;
+}
 
 .card h3{
 font-size:32px;
@@ -128,13 +373,11 @@ color:#4B1E78;
 margin-bottom:15px;
 }
 
-
 .card p{
 font-size:20px;
 line-height:1.8;
 margin-bottom:20px;
 }
-
 
 .btn{
 display:inline-block;
@@ -147,321 +390,262 @@ text-decoration:none;
 border:none;
 cursor:pointer;
 transition:.3s;
+margin-top:10px;
 }
-
 
 .btn:hover{
 background:#FFD54F;
 color:#4B1E78;
 }
 
-
-footer{
-background:#4B1E78;
-color:white;
-text-align:center;
-padding:40px 20px;
-margin-top:60px;
-}
-
-
-@media(max-width:768px){
-
-header h1{
-font-size:30px;
-}
-
-.hero h2{
-font-size:30px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.logo{
-width:90px;
-height:90px;
-}
-
-}
-
 </style>
 
-</head>
+<div class="card">
 
-<body>
+<img src="images/bab.png" alt="باب">
 
-
-<header>
-
-<img src="images/logo.png" class="logo" alt="شعار عالم إسراء">
-
-<h1>📖 الدرس الرابع</h1>
-
-<p>تركيب كلمات</p>
-
-</header>
-
-
-<nav>
-
-<a href="index.html">🏠 الرئيسية</a>
-
-<a href="premiere.html">🥇 الأول ابتدائي</a>
-
-<a href="arabic1.html">📚 اللغة العربية</a>
-
-</nav>
-
-
-<section class="hero">
-
-<h2>🌟 تعلم تركيب الكلمات</h2>
-  <img src="images/israe.png" 
-style="width:180px;border-radius:20px;margin:20px auto;"
-alt="إسراء تشرح الدرس">
+<h3>🚪 باب</h3>
 
 <p>
-في هذا الدرس سنتعلم كيف نجمع الحروف لنكوّن كلمات مفيدة ونقرأها بطريقة ممتعة.
+
+ب + ا + ب
+
 </p>
+
+<button class="btn" onclick="speak('باب')">
+
+🔊 استمع
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/qalam.png" alt="قلم">
+
+<h3>✏️ قلم</h3>
+
+<p>
+
+ق + ل + م
+
+</p>
+
+<button class="btn" onclick="speak('قلم')">
+
+🔊 استمع
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/kitab.png" alt="كتاب">
+
+<h3>📚 كتاب</h3>
+
+<p>
+
+ك + ت + ا + ب
+
+</p>
+
+<button class="btn" onclick="speak('كتاب')">
+
+🔊 استمع
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/bayt.png" alt="بيت">
+
+<h3>🏠 بيت</h3>
+
+<p>
+
+ب + ي + ت
+
+</p>
+
+<button class="btn" onclick="speak('بيت')">
+
+🔊 استمع
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/shams.png" alt="شمس">
+
+<h3>☀️ شمس</h3>
+
+<p>
+
+ش + م + س
+
+</p>
+
+<button class="btn" onclick="speak('شمس')">
+
+🔊 استمع
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="images/warda.png" alt="وردة">
+
+<h3>🌹 وردة</h3>
+
+<p>
+
+و + ر + د + ة
+
+</p>
+
+<button class="btn" onclick="speak('وردة')">
+
+🔊 استمع
+
+</button>
+
+</div>
 
 </section>
-<section class="lessons">
+<!-- ====================== -->
+<!-- الاختبار التفاعلي -->
+<!-- ====================== -->
 
-
-<div class="card">
-
-<h3>ب + ا + ب</h3>
-
-<p>
-نركب الحروف لنحصل على:
-<br><br>
-
-<b>باب</b>
-
-</p>
-
-<button onclick="speak('باب')" class="btn">
-🔊 اسمع الكلمة
-</button>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>ق + ل + م</h3>
-
-<p>
-نركب الحروف لنحصل على:
-<br><br>
-
-<b>قلم</b>
-
-</p>
-
-<button onclick="speak('قلم')" class="btn">
-🔊 اسمع الكلمة
-</button>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>ك + ت + ا + ب</h3>
-
-<p>
-نركب الحروف لنحصل على:
-<br><br>
-
-<b>كتاب</b>
-
-</p>
-
-<button onclick="speak('كتاب')" class="btn">
-🔊 اسمع الكلمة
-</button>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>ب + ي + ت</h3>
-
-<p>
-نركب الحروف لنحصل على:
-<br><br>
-
-<b>بيت</b>
-
-</p>
-
-<button onclick="speak('بيت')" class="btn">
-🔊 اسمع الكلمة
-</button>
-
-</div>
-
-
-</section>
-
-
-
-<section style="padding:70px 20px;background:white;">
-
-
-<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
-🎯 تمرين
-</h2>
-
-
-<div style="max-width:900px;margin:auto;background:#f8f5ff;padding:35px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
-
-
-<p style="font-size:24px;text-align:center;line-height:2;">
-
-ركب الحروف لتكوين كلمات:
-
-</p>
-
-
-<p style="font-size:32px;text-align:center;line-height:2;">
-
-
-م + د + ر + س + ة = ؟
-
-<br><br>
-
-ش + م + س = ؟
-
-<br><br>
-
-و + ر + د + ة = ؟
-
-</p>
-
-
-<p style="text-align:center;font-size:20px;color:#666;">
-
-حاول قراءة الكلمات بصوت واضح.
-
-</p>
-
-
-</div>
-
-
-</section>
 <section style="padding:70px 20px;background:#FFF8DC;">
 
-<h2 style="text-align:center;color:#4B1E78;font-size:38px;">
-💡 معلومة
+<h2 style="text-align:center;font-size:40px;color:#4B1E78;margin-bottom:40px;">
+🎮 اختبر نفسك
 </h2>
 
-<p style="max-width:900px;margin:30px auto;font-size:22px;text-align:center;line-height:2;">
+<div style="max-width:900px;margin:auto;background:white;padding:35px;border-radius:25px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
 
-عندما نرتب الحروف بشكل صحيح نحصل على كلمة لها معنى.
-
-<br><br>
-
-مثال:
+<h3 id="question" style="text-align:center;font-size:32px;color:#4B1E78;">
+ب + ا + ب = ؟
+</h3>
 
 <br>
 
-ب + ا + ب = باب
+<div style="display:flex;justify-content:center;flex-wrap:wrap;gap:15px;">
 
-<br>
+<button class="btn" onclick="checkAnswer('باب')">
+باب
+</button>
 
-ك + ت + ا + ب = كتاب
+<button class="btn" onclick="checkAnswer('بيب')">
+بيب
+</button>
 
-</p>
-
-</section>
-
-
-
-<section style="padding:70px 20px;background:#f8f5ff;">
-
-
-<h2 style="text-align:center;color:#4B1E78;font-size:38px;margin-bottom:40px;">
-⭐ نشاط إضافي
-</h2>
-
-
-<div style="max-width:900px;margin:auto;background:white;padding:35px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
-
-
-<p style="font-size:24px;text-align:center;line-height:2;">
-
-صل الحروف بالكلمة المناسبة:
-
-</p>
-
-
-<p style="font-size:30px;text-align:center;line-height:2;">
-
-
-ب + ح + ر ⟵ بحر
-
-<br><br>
-
-ش + ج + ر + ة ⟵ شجرة
-
-<br><br>
-
-ق + م + ر ⟵ قمر
-
-</p>
-
+<button class="btn" onclick="checkAnswer('بوب')">
+بوب
+</button>
 
 </div>
 
+<p id="result"
+style="margin-top:30px;text-align:center;font-size:28px;font-weight:bold;">
+</p>
+
+</div>
 
 </section>
 
+<!-- ====================== -->
+<!-- شهادة النجاح -->
+<!-- ====================== -->
 
+<section id="certificate"
+style="display:none;padding:70px 20px;background:#E8F5E9;">
 
-<footer>
+<div style="max-width:900px;margin:auto;background:white;padding:40px;border-radius:25px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.15);">
 
-<h2>🌍 عالم إسراء - عالم المعرفة</h2>
+<h2 style="font-size:42px;color:#2E7D32;">
+🏆 أحسنت
+</h2>
 
-<p>منصة التعليم الابتدائي المغربي</p>
+<p style="font-size:28px;line-height:2;margin-top:25px;">
 
-<br>
+لقد أنهيت النشاط بنجاح.
 
-<p>📖 تعلم اليوم... لتنجح غداً.</p>
+</p>
 
-<br>
+<h3 style="font-size:34px;color:#4B1E78;margin-top:30px;">
+⭐ شهادة إنجاز
+</h3>
 
-<p>© 2026 جميع الحقوق محفوظة</p>
+<button class="btn" onclick="window.print()">
+🖨️ طباعة الشهادة
+</button>
 
-</footer>
+</div>
 
-
+</section>
 
 <script>
 
+let score=0;
+
 function speak(word){
 
-let audio = new SpeechSynthesisUtterance(word);
+let audio=new SpeechSynthesisUtterance(word);
 
-audio.lang = "ar-SA";
+audio.lang="ar-SA";
 
-audio.rate = 0.8;
+audio.rate=0.8;
 
 speechSynthesis.speak(audio);
 
 }
 
+function checkAnswer(answer){
+
+let result=document.getElementById("result");
+
+let scoreText=document.getElementById("score");
+
+let progress=document.getElementById("progressBar");
+
+if(answer==="باب"){
+
+score=4;
+
+scoreText.innerHTML=score;
+
+progress.style.width="100%";
+
+result.innerHTML="🎉 أحسنت! إجابة صحيحة";
+
+result.style.color="green";
+
+speechSynthesis.speak(new SpeechSynthesisUtterance("أحسنت"));
+
+setTimeout(function(){
+
+document.getElementById("certificate").style.display="block";
+
+},1000);
+
+}else{
+
+result.innerHTML="❌ حاول مرة أخرى";
+
+result.style.color="red";
+
+}
+
+}
+
 </script>
-
-
-</body>
-
-</html>
