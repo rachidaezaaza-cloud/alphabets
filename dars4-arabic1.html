@@ -8,6 +8,8 @@
 
 <title>📖 الدرس الرابع | تركيب الكلمات | عالم إسراء عالم المعرفة</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
@@ -17,11 +19,10 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Cairo',sans-serif;
-scroll-behavior:smooth;
 }
 
 body{
-background:#f4f7fb;
+background:#f5f7fb;
 color:#333;
 overflow-x:hidden;
 }
@@ -31,55 +32,25 @@ background:linear-gradient(135deg,#4B1E78,#6A1B9A,#8E24AA);
 padding:30px 20px;
 text-align:center;
 color:white;
-position:relative;
-overflow:hidden;
-}
-
-header::before{
-content:"";
-position:absolute;
-width:350px;
-height:350px;
-background:rgba(255,255,255,.08);
-border-radius:50%;
-top:-180px;
-left:-120px;
-}
-
-header::after{
-content:"";
-position:absolute;
-width:300px;
-height:300px;
-background:rgba(255,255,255,.06);
-border-radius:50%;
-bottom:-170px;
-right:-100px;
 }
 
 .logo{
 width:120px;
 height:120px;
 background:white;
-padding:6px;
+padding:5px;
 border-radius:50%;
 border:5px solid #FFD54F;
-position:relative;
-z-index:2;
 }
 
 header h1{
 margin-top:15px;
 font-size:42px;
-position:relative;
-z-index:2;
 }
 
 header p{
 font-size:22px;
 margin-top:10px;
-position:relative;
-z-index:2;
 }
 
 nav{
@@ -87,16 +58,15 @@ background:#4B1E78;
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
-gap:15px;
+gap:12px;
 padding:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
 nav a{
 color:white;
 text-decoration:none;
 font-weight:bold;
-padding:12px 22px;
+padding:10px 18px;
 border-radius:10px;
 transition:.3s;
 }
@@ -104,169 +74,151 @@ transition:.3s;
 nav a:hover{
 background:#FFD54F;
 color:#4B1E78;
-transform:translateY(-3px);
 }
 
 .hero{
-
-background:linear-gradient(135deg,#673AB7,#9C27B0);
-
-padding:80px 20px;
-
+padding:70px 20px;
 text-align:center;
-
+background:linear-gradient(135deg,#673AB7,#9C27B0);
 color:white;
-
 }
 
 .hero img{
-
-width:220px;
-
-margin:25px auto;
-
+width:200px;
+margin:20px auto;
+display:block;
 border-radius:20px;
-
-box-shadow:0 15px 35px rgba(0,0,0,.25);
-
-animation:float 3s ease-in-out infinite;
-
+box-shadow:0 10px 20px rgba(0,0,0,.25);
 }
 
 .hero h2{
-
-font-size:44px;
-
+font-size:42px;
 margin-bottom:20px;
-
 }
 
 .hero p{
-
-font-size:23px;
-
-max-width:900px;
-
-margin:auto;
-
+font-size:22px;
 line-height:2;
-
-}
-
-@keyframes float{
-
-0%{transform:translateY(0);}
-
-50%{transform:translateY(-12px);}
-
-100%{transform:translateY(0);}
-
+max-width:900px;
+margin:auto;
 }
 
 .score-board{
-
 max-width:1100px;
-
 margin:40px auto;
-
 background:white;
-
 padding:25px;
-
 border-radius:20px;
-
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 box-shadow:0 10px 25px rgba(0,0,0,.12);
-
 flex-wrap:wrap;
-
 gap:20px;
-
 }
 
 .score{
-
 font-size:30px;
-
 font-weight:bold;
-
 color:#4B1E78;
-
-}
-
-.stars{
-
-font-size:34px;
-
-color:#FFD700;
-
 }
 
 .progress{
-
-width:250px;
-
+width:260px;
 height:18px;
-
 background:#ddd;
-
-border-radius:50px;
-
+border-radius:30px;
 overflow:hidden;
-
 }
 
 .progress span{
-
 display:block;
-
-height:100%;
-
 width:0%;
-
+height:100%;
 background:#4CAF50;
-
 transition:.5s;
+}
 
+.lessons{
+max-width:1200px;
+margin:60px auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+padding:30px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+border-top:8px solid #6A1B9A;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:140px;
+height:140px;
+object-fit:contain;
+margin-bottom:15px;
+}
+
+.card h3{
+font-size:30px;
+color:#4B1E78;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:20px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+background:#6A1B9A;
+color:white;
+padding:12px 30px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:18px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#FFD54F;
+color:#4B1E78;
 }
 
 @media(max-width:768px){
 
 header h1{
-
 font-size:30px;
-
 }
 
 .hero h2{
-
 font-size:30px;
-
 }
 
 .hero p{
-
 font-size:18px;
-
 }
 
 .logo{
-
 width:90px;
-
 height:90px;
-
 }
 
 .score-board{
-
 justify-content:center;
-
 }
 
 }
@@ -276,14 +228,13 @@ justify-content:center;
 </head>
 
 <body>
-
-<header>
+  <header>
 
 <img src="images/logo.png" class="logo" alt="شعار عالم إسراء">
 
 <h1>📖 الدرس الرابع</h1>
 
-<p>تركيب الكلمات بطريقة تفاعلية</p>
+<p>تركيب الكلمات</p>
 
 </header>
 
@@ -305,7 +256,7 @@ justify-content:center;
 
 <p>
 
-سنتعلم في هذا الدرس كيف نجمع الحروف لنكوّن كلمات صحيحة بطريقة ممتعة وتفاعلية.
+في هذا الدرس سنتعلم كيف نجمع الحروف لنكوّن كلمات مفيدة ونقرأها بطريقة سهلة وممتعة.
 
 </p>
 
@@ -316,13 +267,13 @@ justify-content:center;
 <div class="score">
 
 🏆 النقاط:
-<span id="score">0</span>/4
+<span id="score">0</span>/6
 
 </div>
 
-<div class="stars">
+<div>
 
-⭐⭐⭐⭐
+⭐⭐⭐⭐⭐⭐
 
 </div>
 
@@ -333,72 +284,8 @@ justify-content:center;
 </div>
 
 </section>
+
 <section class="lessons">
-
-<style>
-
-.lessons{
-max-width:1200px;
-margin:60px auto;
-padding:20px;
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-border-radius:25px;
-padding:30px;
-text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,.12);
-border-top:8px solid #6A1B9A;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card img{
-width:150px;
-height:150px;
-object-fit:contain;
-margin-bottom:20px;
-}
-
-.card h3{
-font-size:32px;
-color:#4B1E78;
-margin-bottom:15px;
-}
-
-.card p{
-font-size:20px;
-line-height:1.8;
-margin-bottom:20px;
-}
-
-.btn{
-display:inline-block;
-background:#6A1B9A;
-color:white;
-padding:12px 30px;
-border-radius:10px;
-font-weight:bold;
-text-decoration:none;
-border:none;
-cursor:pointer;
-transition:.3s;
-margin-top:10px;
-}
-
-.btn:hover{
-background:#FFD54F;
-color:#4B1E78;
-}
-
-</style>
 
 <div class="card">
 
@@ -406,11 +293,7 @@ color:#4B1E78;
 
 <h3>🚪 باب</h3>
 
-<p>
-
-ب + ا + ب
-
-</p>
+<p>ب + ا + ب</p>
 
 <button class="btn" onclick="speak('باب')">
 
@@ -426,11 +309,7 @@ color:#4B1E78;
 
 <h3>✏️ قلم</h3>
 
-<p>
-
-ق + ل + م
-
-</p>
+<p>ق + ل + م</p>
 
 <button class="btn" onclick="speak('قلم')">
 
@@ -446,11 +325,7 @@ color:#4B1E78;
 
 <h3>📚 كتاب</h3>
 
-<p>
-
-ك + ت + ا + ب
-
-</p>
+<p>ك + ت + ا + ب</p>
 
 <button class="btn" onclick="speak('كتاب')">
 
@@ -466,11 +341,7 @@ color:#4B1E78;
 
 <h3>🏠 بيت</h3>
 
-<p>
-
-ب + ي + ت
-
-</p>
+<p>ب + ي + ت</p>
 
 <button class="btn" onclick="speak('بيت')">
 
@@ -486,11 +357,7 @@ color:#4B1E78;
 
 <h3>☀️ شمس</h3>
 
-<p>
-
-ش + م + س
-
-</p>
+<p>ش + م + س</p>
 
 <button class="btn" onclick="speak('شمس')">
 
@@ -506,11 +373,7 @@ color:#4B1E78;
 
 <h3>🌹 وردة</h3>
 
-<p>
-
-و + ر + د + ة
-
-</p>
+<p>و + ر + د + ة</p>
 
 <button class="btn" onclick="speak('وردة')">
 
@@ -521,70 +384,99 @@ color:#4B1E78;
 </div>
 
 </section>
-<!-- ====================== -->
-<!-- الاختبار التفاعلي -->
-<!-- ====================== -->
-
 <section style="padding:70px 20px;background:#FFF8DC;">
 
 <h2 style="text-align:center;font-size:40px;color:#4B1E78;margin-bottom:40px;">
 🎮 اختبر نفسك
 </h2>
 
-<div style="max-width:900px;margin:auto;background:white;padding:35px;border-radius:25px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
+<div style="max-width:900px;margin:auto;background:white;padding:35px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,.12);">
 
-<h3 id="question" style="text-align:center;font-size:32px;color:#4B1E78;">
-ب + ا + ب = ؟
+<h3 style="text-align:center;font-size:30px;color:#4B1E78;">
+اختر الكلمة الصحيحة
 </h3>
 
 <br>
 
-<div style="display:flex;justify-content:center;flex-wrap:wrap;gap:15px;">
+<div style="margin-bottom:40px;">
 
-<button class="btn" onclick="checkAnswer('باب')">
-باب
-</button>
+<p style="font-size:28px;text-align:center;">
+ب + ا + ب = ؟
+</p>
 
-<button class="btn" onclick="checkAnswer('بيب')">
-بيب
-</button>
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;">
 
-<button class="btn" onclick="checkAnswer('بوب')">
-بوب
-</button>
+<button class="btn" onclick="checkAnswer('باب',1)">باب</button>
+
+<button class="btn" onclick="checkAnswer('بيب',1)">بيب</button>
+
+<button class="btn" onclick="checkAnswer('بوب',1)">بوب</button>
 
 </div>
 
-<p id="result"
-style="margin-top:30px;text-align:center;font-size:28px;font-weight:bold;">
+<p id="result1" style="text-align:center;font-size:26px;margin-top:20px;"></p>
+
+</div>
+
+<hr><br>
+
+<div style="margin-bottom:40px;">
+
+<p style="font-size:28px;text-align:center;">
+ق + ل + م = ؟
 </p>
+
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;">
+
+<button class="btn" onclick="checkAnswer('قلم',2)">قلم</button>
+
+<button class="btn" onclick="checkAnswer('قالم',2)">قالم</button>
+
+<button class="btn" onclick="checkAnswer('قام',2)">قام</button>
+
+</div>
+
+<p id="result2" style="text-align:center;font-size:26px;margin-top:20px;"></p>
+
+</div>
+
+<hr><br>
+
+<div>
+
+<p style="font-size:28px;text-align:center;">
+ب + ي + ت = ؟
+</p>
+
+<div style="display:flex;justify-content:center;gap:15px;flex-wrap:wrap;">
+
+<button class="btn" onclick="checkAnswer('بيت',3)">بيت</button>
+
+<button class="btn" onclick="checkAnswer('بات',3)">بات</button>
+
+<button class="btn" onclick="checkAnswer('بوت',3)">بوت</button>
+
+</div>
+
+<p id="result3" style="text-align:center;font-size:26px;margin-top:20px;"></p>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- ====================== -->
-<!-- شهادة النجاح -->
-<!-- ====================== -->
+<section id="certificate" style="display:none;padding:70px 20px;background:#E8F5E9;">
 
-<section id="certificate"
-style="display:none;padding:70px 20px;background:#E8F5E9;">
-
-<div style="max-width:900px;margin:auto;background:white;padding:40px;border-radius:25px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.15);">
+<div style="max-width:900px;margin:auto;background:white;padding:40px;border-radius:20px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.12);">
 
 <h2 style="font-size:42px;color:#2E7D32;">
 🏆 أحسنت
 </h2>
 
-<p style="font-size:28px;line-height:2;margin-top:25px;">
-
-لقد أنهيت النشاط بنجاح.
-
+<p style="font-size:28px;margin-top:20px;">
+لقد أكملت النشاط بنجاح.
 </p>
-
-<h3 style="font-size:34px;color:#4B1E78;margin-top:30px;">
-⭐ شهادة إنجاز
-</h3>
 
 <button class="btn" onclick="window.print()">
 🖨️ طباعة الشهادة
@@ -593,50 +485,88 @@ style="display:none;padding:70px 20px;background:#E8F5E9;">
 </div>
 
 </section>
+<footer>
+
+<h2>🌍 عالم إسراء - عالم المعرفة</h2>
+
+<p>منصة التعليم الابتدائي المغربي</p>
+
+<br>
+
+<p>📖 تعلم اليوم... لتنجح غداً.</p>
+
+<br>
+
+<p>© 2026 جميع الحقوق محفوظة</p>
+
+</footer>
 
 <script>
 
-let score=0;
+let score = 0;
+let answered = [false,false,false];
 
 function speak(word){
 
-let audio=new SpeechSynthesisUtterance(word);
+let audio = new SpeechSynthesisUtterance(word);
 
-audio.lang="ar-SA";
-
-audio.rate=0.8;
+audio.lang = "ar-SA";
+audio.rate = 0.8;
 
 speechSynthesis.speak(audio);
 
 }
 
-function checkAnswer(answer){
+function updateScore(){
 
-let result=document.getElementById("result");
+document.getElementById("score").innerHTML = score;
 
-let scoreText=document.getElementById("score");
+document.getElementById("progressBar").style.width = (score/3*100)+"%";
 
-let progress=document.getElementById("progressBar");
-
-if(answer==="باب"){
-
-score=4;
-
-scoreText.innerHTML=score;
-
-progress.style.width="100%";
-
-result.innerHTML="🎉 أحسنت! إجابة صحيحة";
-
-result.style.color="green";
-
-speechSynthesis.speak(new SpeechSynthesisUtterance("أحسنت"));
+if(score==3){
 
 setTimeout(function(){
 
 document.getElementById("certificate").style.display="block";
 
-},1000);
+window.scrollTo({
+top:document.getElementById("certificate").offsetTop,
+behavior:"smooth"
+});
+
+},500);
+
+}
+
+}
+
+function checkAnswer(answer,q){
+
+let correct="";
+
+if(q==1) correct="باب";
+if(q==2) correct="قلم";
+if(q==3) correct="بيت";
+
+let result=document.getElementById("result"+q);
+
+if(answer==correct){
+
+if(!answered[q-1]){
+
+answered[q-1]=true;
+
+score++;
+
+updateScore();
+
+}
+
+result.innerHTML="✅ أحسنت";
+
+result.style.color="green";
+
+speechSynthesis.speak(new SpeechSynthesisUtterance("أحسنت"));
 
 }else{
 
@@ -649,3 +579,7 @@ result.style.color="red";
 }
 
 </script>
+
+</body>
+
+</html>
